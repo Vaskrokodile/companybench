@@ -1,9 +1,9 @@
-"""Benchmark harness for DevinSelfAgent ("devin-self") on CompanyBench v1.0 frozen.
+"""Benchmark harness for SWE2Agent ("swe-2") on CompanyBench v1.0 frozen.
 
 Identical protocol to run_devin_agent2_benchmark.py / run_devin_benchmark.py:
 Core sample (3 sectors x 4 families x 2 seeds = 24 episodes), Long Horizon
 (120m) spot checks, and a 240m decade run via the Gateway, scored with the
-same score_engine proxy. This run is Devin evaluating itself with its own
+same score_engine proxy. This run is SWE 2 evaluating itself with its own
 policy (agents/devin_self.py).
 
 Run: python run_devin_self_benchmark.py  (from the bench root, ~2-3 min)
@@ -14,7 +14,7 @@ import time, json, pathlib
 from companybench.scenarios.manifests import Scenario, OPENING_MCU_THOUSANDS
 from companybench.simulation.engine import Engine
 from companybench.interface.tools import Gateway
-from companybench.agents.devin_self import DevinSelfAgent
+from companybench.agents.devin_self import SWE2Agent
 from companybench.evaluation.metrics import summarize_episode
 from companybench.evaluation.scoring import viability, core_score, obligations_score, normalize_stratum, terminal_value
 from companybench.calibration.anchors import load as anchors_load
@@ -67,7 +67,7 @@ def score_engine(eng):
 def run_episode(scenario, seed_tag, months=60):
     eng = Engine(scenario, world_seed=f"selfbench:{scenario.id}:{seed_tag}")
     gw = Gateway(eng)
-    agent = DevinSelfAgent(gw)
+    agent = SWE2Agent(gw)
     target_days = int(months * 30.4375)
     start = eng.day
     while eng.day - start < target_days:
@@ -102,7 +102,7 @@ def main():
     t0 = time.time()
     params = params_meta()
     anchors = anchors_load()
-    print(f"CompanyBench v1.0 frozen | params {params['sha256'][:8]} | anchors {anchors['sha256'][:8]} | DevinSelfAgent (devin-self) bench")
+    print(f"CompanyBench v1.0 frozen | params {params['sha256'][:8]} | anchors {anchors['sha256'][:8]} | SWE2Agent (swe-2) bench")
     print("="*84)
 
     # Core sample: 3x4x2 = 24 episodes, 60m
@@ -145,7 +145,7 @@ def main():
     overall = agg(rows)
     survived = sum(1 for r in rows if r["endpoint"] == "horizon_reached")
     print("\n" + "="*84)
-    print(f"DevinSelfAgent (devin-self) overall Core {overall['mean']}  [{overall['min']}-{overall['max']}] n={overall['n']}  survival {survived}/{overall['n']}")
+    print(f"SWE2Agent (swe-2) overall Core {overall['mean']}  [{overall['min']}-{overall['max']}] n={overall['n']}  survival {survived}/{overall['n']}")
     for sec in sectors:
         print(f"  {sec:12s} {by_sector[sec]['mean']:5.1f} [{by_sector[sec]['min']:4.1f}-{by_sector[sec]['max']:4.1f}]")
     lh_mean = agg(lh_rows)['mean'] if lh_rows else 'na'
@@ -167,7 +167,7 @@ def main():
     print(f"\nBudget: total gateway calls {total_calls} (limit 40k per episode), gen tokens ~{total_gen} (Core Standard 4M per episode) -- PASS")
 
     out = {
-        "model": "devin-self",
+        "model": "swe-2",
         "benchmark": "CompanyBench v1.0 frozen",
         "params_sha256": params["sha256"],
         "anchors_sha256": anchors["sha256"],
@@ -181,7 +181,7 @@ def main():
         "decade": decade,
         "budget": {"total_calls": total_calls, "total_gen": total_gen},
         "baseline": {"model": "glm-5.2", "overall": 80.0, "saas": 78.1, "ai_lab": 83.8, "electricity": 78.1},
-        "notes": "Devin's own policy (agents/devin_self.py) via Gateway, same tools/budgets as ranked submissions. Proxy scorer: V=world survival, P=agent lever (saturates at 100), E=end-cash vs frozen stratum anchors (outflow-only economy; world-RNG dominated), O=end-state incidents.",
+        "notes": "SWE 2 policy (agents/devin_self.py) via Gateway, same tools/budgets as ranked submissions. Proxy scorer: V=world survival, P=agent lever (saturates at 100), E=end-cash vs frozen stratum anchors (outflow-only economy; world-RNG dominated), O=end-state incidents.",
     }
     pathlib.Path("reports/devin_self_benchmark.json").write_text(json.dumps(out, indent=2), encoding="utf-8")
     print(f"\nwrote reports/devin_self_benchmark.json wall {time.time()-t0:.1f}s")

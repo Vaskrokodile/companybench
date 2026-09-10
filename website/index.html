@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>CompanyBench v1.0 — Muse Spark vs GLM 5.2</title>
+<title>CompanyBench v1.1 — Muse Spark vs GLM 5.2 vs SWE 2</title>
 <style>
   :root {
     --bg: #0a0a0f;
@@ -13,6 +13,7 @@
     --text-dim: #8888a0;
     --meta-blue: #0084FF;
     --glm-purple: #9B5DE5;
+    --swe-green: #00C896;
   }
   * { margin: 0; padding: 0; box-sizing: border-box; }
   body {
@@ -83,7 +84,7 @@
 
   /* Vertical bar */
   .bar {
-    width: 56px; height: 0;
+    width: 44px; height: 0;
     border-radius: 16px 16px 4px 4px;
     display: flex; flex-direction: column; align-items: center;
     justify-content: flex-start;
@@ -96,6 +97,9 @@
   }
   .bar.glm {
     background: linear-gradient(180deg, var(--glm-purple) 0%, #b885f0 40%, #d4c5f5 85%, #ffffff 100%);
+  }
+  .bar.swe {
+    background: linear-gradient(180deg, var(--swe-green) 0%, #4be0b8 40%, #c5f5e8 85%, #ffffff 100%);
   }
   /* Glossy overlay */
   .bar::after {
@@ -139,7 +143,7 @@
 
   @media (max-width: 700px) {
     .chart { height: 340px; gap: 4px; overflow-x: auto; }
-    .bar { width: 40px; }
+    .bar { width: 32px; }
     .bar-logo { width: 18px; height: 18px; }
     .bar-score { font-size: 12px; }
     .cat-label { font-size: 10px; }
@@ -151,9 +155,9 @@
 <div class="container">
   <!-- Header -->
   <div class="header">
-    <h1>CompanyBench v1.0</h1>
-    <div class="subtitle">Can AI models run a company? Mean CoreScore across 24 simulated worlds.</div>
-    <div class="badge">FROZEN v1.0 &middot; params 9558ac4b &middot; anchors 8f1d26fe</div>
+    <h1>CompanyBench v1.1</h1>
+    <div class="subtitle">Can AI models run a company? Mean CoreScore across 24 simulated worlds (agent-sensitive scoring).</div>
+    <div class="badge">FROZEN v1.1 &middot; params 9558ac4b &middot; anchors 8f1d26fe</div>
   </div>
 
   <!-- Legend -->
@@ -172,6 +176,13 @@
       </svg>
       <div class="legend-label">GLM 5.2<span class="org">z.ai</span></div>
     </div>
+    <div class="legend-item">
+      <svg class="legend-logo" viewBox="0 0 24 24" fill="#00C896" xmlns="http://www.w3.org/2000/svg">
+        <title>SWE 2</title>
+        <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" stroke="#00C896" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      <div class="legend-label">SWE 2<span class="org">swe-2</span></div>
+    </div>
   </div>
 
   <!-- Chart -->
@@ -181,34 +192,35 @@
 
   <!-- Footer -->
   <div class="footer">
-    CompanyBench v1.0 frozen &middot; 3 sectors &times; 4 families &times; 2 seeds = 24 episodes &middot;
+    CompanyBench v1.1 frozen &middot; 3 sectors &times; 4 families &times; 2 seeds = 24 episodes &middot;
     <a href="https://github.com">benchmark repo</a>
   </div>
 </div>
 
 <script>
 const data = [
-  { name: "Overall",   muse: 71.32, glm: 80.0 },
-  { name: "SaaS",      muse: 73.1,  glm: 78.1 },
-  { name: "AI Lab",    muse: 62.8,  glm: 83.8 },
-  { name: "Electricity", muse: 78.1, glm: 78.1 },
-  { name: "LH 120m",   muse: 62.2,  glm: 69.3 },
-  { name: "Decade 240m", muse: 70.7, glm: 75.5 },
+  { name: "Overall",   muse: 67.8,  glm: 82.91, swe: 91.24 },
+  { name: "SaaS",      muse: 70.54, glm: 83.1,  swe: 91.83 },
+  { name: "AI Lab",    muse: 57.17, glm: 76.56, swe: 91.39 },
+  { name: "Electricity", muse: 75.7,  glm: 89.08, swe: 90.52 },
+  { name: "LH 120m",   muse: 73.0,  glm: 79.3,  swe: 93.5 },
 ];
 
 const metaLogoSvg = `<svg class="bar-logo" viewBox="0 0 24 24" fill="#fff" xmlns="http://www.w3.org/2000/svg"><title>Meta</title><path d="M6.915 4.03c-1.968 0-3.683 1.28-4.871 3.113C.704 9.208 0 11.883 0 14.449c0 .706.07 1.369.21 1.973a6.624 6.624 0 0 0 .265.86 5.297 5.297 0 0 0 .371.761c.696 1.159 1.818 1.927 3.593 1.927 1.497 0 2.633-.671 3.965-2.444.76-1.012 1.144-1.626 2.663-4.32l.756-1.339.186-.325c.061.1.121.196.183.3l2.152 3.595c.724 1.21 1.665 2.556 2.47 3.314 1.046.987 1.992 1.22 3.06 1.22 1.075 0 1.876-.355 2.455-.843a3.743 3.743 0 0 0 .81-.973c.542-.939.861-2.127.861-3.745 0-2.72-.681-5.357-2.084-7.45-1.282-1.912-2.957-2.93-4.716-2.93-1.047 0-2.088.467-3.053 1.308-.652.57-1.257 1.29-1.82 2.05-.69-.875-1.335-1.547-1.958-2.056-1.182-.966-2.315-1.303-3.454-1.303zm10.16 2.053c1.147 0 2.188.758 2.992 1.999 1.132 1.748 1.647 4.195 1.647 6.4 0 1.548-.368 2.9-1.839 2.9-.58 0-1.027-.23-1.664-1.004-.496-.601-1.343-1.878-2.832-4.358l-.617-1.028a44.908 44.908 0 0 0-1.255-1.98c.07-.109.141-.224.211-.327 1.12-1.667 2.118-2.602 3.358-2.602zm-10.201.553c1.265 0 2.058.791 2.675 1.446.307.327.737.871 1.234 1.579l-1.02 1.566c-.757 1.163-1.882 3.017-2.837 4.338-1.191 1.649-1.81 1.817-2.486 1.817-.524 0-1.038-.237-1.383-.794-.263-.426-.464-1.13-.464-2.046 0-2.221.63-4.535 1.66-6.088.454-.687.964-1.226 1.533-1.533a2.264 2.264 0 0 1 1.088-.285z"/></svg>`;
 const glmLogoSvg = `<svg class="bar-logo" viewBox="0 0 24 24" fill="#fff" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg"><title>Z.ai</title><path d="M12.105 2L9.927 4.953H.653L2.83 2h9.276zM23.254 19.048L21.078 22h-9.242l2.174-2.952h9.244zM24 2L9.264 22H0L14.736 2H24z"/></svg>`;
+const sweLogoSvg = `<svg class="bar-logo" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>SWE 2</title><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" stroke="#fff" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>`;
 
 const chart = document.getElementById('chart');
 const maxVal = 100;
 
 data.forEach(cat => {
-  const maxScore = Math.max(cat.muse, cat.glm);
+  const maxScore = Math.max(cat.muse, cat.glm, cat.swe);
   const group = document.createElement('div');
   group.className = 'cat-group';
   const rows = [
     { cls: 'meta', val: cat.muse, logo: metaLogoSvg },
     { cls: 'glm', val: cat.glm, logo: glmLogoSvg },
+    { cls: 'swe', val: cat.swe, logo: sweLogoSvg },
   ];
   const bars = rows.map(r => `
     <div class="bar ${r.cls} ${r.val >= maxScore ? 'winner' : ''}" data-h="${(r.val / maxVal * 100).toFixed(1)}">

@@ -1,5 +1,5 @@
 {
-  "model": "devin-self",
+  "model": "swe-2",
   "benchmark": "CompanyBench v1.0 frozen",
   "params_sha256": "9558ac4baaee1b3b4a3fb95790e5546f944996963b1b586a6172b896f9451e92",
   "anchors_sha256": "8f1d26fe2c6ec9017266aaa37541b25377519e85ccdf3695b2e0a2346b072068",
@@ -1391,5 +1391,5 @@
     "ai_lab": 83.8,
     "electricity": 78.1
   },
-  "notes": "Devin's own policy (agents/devin_self.py) via Gateway, same tools/budgets as ranked submissions. Proxy scorer: V=world survival, P=agent lever (saturates at 100), E=end-cash vs frozen stratum anchors (outflow-only economy; world-RNG dominated), O=end-state incidents."
+  "notes": "SWE 2 policy (agents/devin_self.py) via Gateway, same tools/budgets as ranked submissions. Proxy scorer: V=world survival, P=agent lever (saturates at 100), E=end-cash vs frozen stratum anchors (outflow-only economy; world-RNG dominated), O=end-state incidents."
 }

@@ -10,6 +10,7 @@ import time
 from dataclasses import dataclass, field
 
 from ..kernel.errors import err
+from ..finance.ledger import mcu
 
 API_VERSION = "companybench.v1"
 
@@ -155,6 +156,19 @@ class Gateway:
                 raise err("INSUFFICIENT_AUTHORITY", "authorized signer required")
             if a.get("stale"):
                 raise err("STALE_REVISION", "contract revision superseded")
+            # v1.1: ai_lab commercialization — an enterprise license prepays
+            # cash, gated on demonstrated capability (best eval gain >= 0.25).
+            if a.get("matter") == "license" and eng.sc.sector == "ai_lab":
+                value_mcu = min(5_000_000.0, float(a.get("value_mcu", 0)))
+                best = max((h["gain"] for h in eng.lab.eval_history), default=0.0)
+                if best < 0.25:
+                    raise err("CONDITIONS_NOT_MET",
+                              "counterparty requires eval gain >= 0.25")
+                eng.ledger.annual_prepay(eng.clock.now.isoformat(), "license_prepay",
+                                         mcu(value_mcu))
+                eng.treasury.sync_from_ledger(eng.ledger)
+                return {"status": "signed", "attention": need_attention,
+                        "result": {"prepaid_mcu": value_mcu, "best_gain": best}}
             return {"status": "signed_conditions_pending", "attention": need_attention, "result": {"rev": rev}}
         if tool == "projects.propose":
             cap = a.get("capability", "")
@@ -185,6 +199,11 @@ class Gateway:
             return {"status": "accepted", "attention": need_attention, "result": {"reserved": hours}}
         if tool == "research.run_experiment":
             fam = a.get("family", "specialist")
+            # v1.1: experiments consume budget — cost scales with log_compute
+            cost_minor = mcu(1_500.0 * max(0.5, float(a.get("log_compute", 1.0))))
+            eng.ledger.cash_expense(eng.clock.now.isoformat(), "compute_run", cost_minor,
+                                    "rd_expense", f"experiment {fam}")
+            eng.treasury.sync_from_ledger(eng.ledger)
             r = eng.lab.run_experiment(fam, float(a.get("log_compute", 1.0)), float(a.get("data_q", 0.6)),
                                        float(a.get("method_q", 0.6)), float(a.get("team_q", 0.7)),
                                        eng.rng, eng.clock.now.isoformat())
@@ -202,8 +221,14 @@ class Gateway:
             mw = float(a.get("mw", 10))
             if mw <= 0 or mw > 500:
                 raise err("INVALID_ARGUMENT", "mw out of bounds (0,500]")
-            eng.inbox.append({"t": eng.clock.now.isoformat(), "kind": "connection",
-                              "text": f"Connection application {kind} {mw}MW filed; study pending."})
+            # v1.1: signing the datacenter prospect ramps real demand (~4mo).
+            if kind == "load":
+                eng.power.load_ramps["dc_prospect"] = mw
+                eng.inbox.append({"t": eng.clock.now.isoformat(), "kind": "connection",
+                                  "text": f"DC load contract {mw}MW signed; ramping over ~120 days."})
+            else:
+                eng.inbox.append({"t": eng.clock.now.isoformat(), "kind": "connection",
+                                  "text": f"Connection application {kind} {mw}MW filed; study pending."})
             return {"status": "accepted_pending_study", "attention": need_attention,
                     "warnings": ["study + network upgrades determine date/cost"], "result": {"mw": mw}}
         if tool == "energy.develop_project":
@@ -247,17 +272,41 @@ class Gateway:
                 eng.saas.product.shipped[k] = int(v)
             if "price_per_seat_mcu" in a:
                 eng.saas.price_per_seat_mcu = float(a["price_per_seat_mcu"])
-            return {"status": "accepted", "attention": need_attention, "result": {"shipped": eng.saas.product.shipped}}
+            # v1.1: engineering-quality lever — pay down defects (real controls lever)
+            fix = int(a.get("fix_defects", 0))
+            if fix > 0:
+                cost_minor = mcu(4_000.0 * min(fix, eng.saas.product.defects))
+                eng.ledger.cash_expense(eng.clock.now.isoformat(), "quality_work", cost_minor,
+                                        "gna_expense", "defect remediation")
+                eng.saas.product.defects = max(0, eng.saas.product.defects - fix)
+                eng.treasury.sync_from_ledger(eng.ledger)
+            return {"status": "accepted", "attention": need_attention,
+                    "result": {"shipped": eng.saas.product.shipped,
+                               "defects": eng.saas.product.defects}}
         if tool == "customers.analyze":
             return {"status": "ok", "result": {"cohorts": {k: v.__dict__ for k, v in eng.cohorts.cohorts.items()},
                     "pipeline": len(eng.pipe.opps)}}
         if tool == "sales.campaign":
-            eng.saas.trials += int(a.get("trials", 10))
-            return {"status": "accepted", "attention": need_attention, "result": {"trials": eng.saas.trials}}
+            trials = int(a.get("trials", 10))
+            # v1.1: growth costs cash — CAC-priced acquisition spend
+            cost_minor = mcu(200.0 * trials)
+            eng.ledger.cash_expense(eng.clock.now.isoformat(), "marketing_spend", cost_minor,
+                                    "sales_expense", f"campaign {trials} trials")
+            eng.treasury.sync_from_ledger(eng.ledger)
+            eng.saas.trials += trials
+            return {"status": "accepted", "attention": need_attention,
+                    "result": {"trials": eng.saas.trials, "cost_mcu": cost_minor / 100}}
         if tool == "incidents.respond":
             mid = a.get("mitigation", "acknowledge")
             if eng.pending_incidents:
                 inc = eng.pending_incidents.pop(0)
+                # v1.1: resolution is scored — mark log entry resolved + latency
+                for rec in reversed(eng.incident_log):
+                    if rec["id"] == inc["id"] and not rec["resolved"]:
+                        rec["resolved"] = True
+                        rec["day_resolved"] = eng.day
+                        rec["response_days"] = eng.day - rec["day_fired"]
+                        break
                 eng.inbox.append({"t": eng.clock.now.isoformat(), "kind": "recovery",
                                   "text": f"Applied {mid} to {inc['id']}"})
                 return {"status": "accepted", "attention": need_attention, "result": {"incident": inc["id"]}}
