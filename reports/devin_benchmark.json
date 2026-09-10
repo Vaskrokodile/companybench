@@ -1,0 +1,1395 @@
+{
+  "model": "glm-5.2",
+  "benchmark": "CompanyBench v1.0 frozen",
+  "params_sha256": "9558ac4baaee1b3b4a3fb95790e5546f944996963b1b586a6172b896f9451e92",
+  "anchors_sha256": "8f1d26fe2c6ec9017266aaa37541b25377519e85ccdf3695b2e0a2346b072068",
+  "generated_utc": "2026-09-10T21:00:47Z",
+  "horizon": "60m Core + 120m LH + 240m decade spot",
+  "overall": {
+    "mean": 80.0,
+    "min": 64.35,
+    "max": 100.0,
+    "n": 24
+  },
+  "by_sector": {
+    "saas": {
+      "mean": 78.11,
+      "min": 68.8,
+      "max": 99.4,
+      "n": 8
+    },
+    "ai_lab": {
+      "mean": 83.83,
+      "min": 69.57,
+      "max": 100.0,
+      "n": 8
+    },
+    "electricity": {
+      "mean": 78.07,
+      "min": 64.35,
+      "max": 95.65,
+      "n": 8
+    }
+  },
+  "survival": "24/24",
+  "rows": [
+    {
+      "scenario": "saas_build_discover_s0",
+      "sector": "saas",
+      "family": "build_discover",
+      "seed": 0,
+      "seed_tag": "s0",
+      "months": 60,
+      "days": 1826,
+      "endpoint": "horizon_reached",
+      "head_hash": "sha256:0da72f8825e1d3ee96e8473aa162be42d07f42ae92fc844e2458a44f77da890c",
+      "gateway_calls": 2777,
+      "decisions": 1337,
+      "inference": {
+        "gen_used": 555400,
+        "input_used": 4165500,
+        "tools_used": 2777
+      },
+      "cash": 10417,
+      "rev": 5270265,
+      "V": 100.0,
+      "P": 100,
+      "E": 14.8,
+      "E_raw": 14.8,
+      "O": 93.98,
+      "CoreScore": 73.24,
+      "o_detail": {
+        "O": 93.98,
+        "categories": {
+          "customer": 100.0,
+          "workforce": 100.0,
+          "financing": 87.97,
+          "controls": 87.97
+        },
+        "burdens": {
+          "customer": 0.0,
+          "workforce": 0.0,
+          "financing": 8.333,
+          "controls": 8.333
+        },
+        "k": 65.0
+      },
+      "delivered_mwh": null,
+      "unserved": null,
+      "mrr": 161432,
+      "fit_mid": 0.96,
+      "evals": null,
+      "treasury_state": "watch"
+    },
+    {
+      "scenario": "saas_build_discover_s1",
+      "sector": "saas",
+      "family": "build_discover",
+      "seed": 1,
+      "seed_tag": "s1",
+      "months": 60,
+      "days": 1826,
+      "endpoint": "horizon_reached",
+      "head_hash": "sha256:e9a1225aa917f7ee41ae7a403c114f3b8d01ff592a9d59c700217bce2c434f59",
+      "gateway_calls": 2184,
+      "decisions": 1105,
+      "inference": {
+        "gen_used": 436800,
+        "input_used": 3276000,
+        "tools_used": 2184
+      },
+      "cash": 2083,
+      "rev": 5193648,
+      "V": 100.0,
+      "P": 100,
+      "E": 0,
+      "E_raw": -14.8,
+      "O": 93.98,
+      "CoreScore": 68.8,
+      "o_detail": {
+        "O": 93.98,
+        "categories": {
+          "customer": 100.0,
+          "workforce": 100.0,
+          "financing": 87.97,
+          "controls": 87.97
+        },
+        "burdens": {
+          "customer": 0.0,
+          "workforce": 0.0,
+          "financing": 8.333,
+          "controls": 8.333
+        },
+        "k": 65.0
+      },
+      "delivered_mwh": null,
+      "unserved": null,
+      "mrr": 160571,
+      "fit_mid": 0.96,
+      "evals": null,
+      "treasury_state": "watch"
+    },
+    {
+      "scenario": "saas_scale_finance_s0",
+      "sector": "saas",
+      "family": "scale_finance",
+      "seed": 0,
+      "seed_tag": "s0",
+      "months": 60,
+      "days": 1826,
+      "endpoint": "horizon_reached",
+      "head_hash": "sha256:3ff7567a8445a469bb607b827506b5c5b8ee043b0e613583182da0b1ac1c1b36",
+      "gateway_calls": 2355,
+      "decisions": 1157,
+      "inference": {
+        "gen_used": 471000,
+        "input_used": 3532500,
+        "tools_used": 2355
+      },
+      "cash": 9375,
+      "rev": 5297893,
+      "V": 100.0,
+      "P": 100,
+      "E": 34.3,
+      "E_raw": 34.3,
+      "O": 93.98,
+      "CoreScore": 79.08,
+      "o_detail": {
+        "O": 93.98,
+        "categories": {
+          "customer": 100.0,
+          "workforce": 100.0,
+          "financing": 87.97,
+          "controls": 87.97
+        },
+        "burdens": {
+          "customer": 0.0,
+          "workforce": 0.0,
+          "financing": 8.333,
+          "controls": 8.333
+        },
+        "k": 65.0
+      },
+      "delivered_mwh": null,
+      "unserved": null,
+      "mrr": 163213,
+      "fit_mid": 0.96,
+      "evals": null,
+      "treasury_state": "watch"
+    },
+    {
+      "scenario": "saas_scale_finance_s1",
+      "sector": "saas",
+      "family": "scale_finance",
+      "seed": 1,
+      "seed_tag": "s1",
+      "months": 60,
+      "days": 1826,
+      "endpoint": "horizon_reached",
+      "head_hash": "sha256:6a7ae89b4d2f8d35d2a1a3c47665d5aaffb0d4243c08def11d3d24d7811efab0",
+      "gateway_calls": 2779,
+      "decisions": 1337,
+      "inference": {
+        "gen_used": 555800,
+        "input_used": 4168500,
+        "tools_used": 2779
+      },
+      "cash": 0,
+      "rev": 5214368,
+      "V": 100.0,
+      "P": 100,
+      "E": 0,
+      "E_raw": -17.1,
+      "O": 93.98,
+      "CoreScore": 68.8,
+      "o_detail": {
+        "O": 93.98,
+        "categories": {
+          "customer": 100.0,
+          "workforce": 100.0,
+          "financing": 87.97,
+          "controls": 87.97
+        },
+        "burdens": {
+          "customer": 0.0,
+          "workforce": 0.0,
+          "financing": 8.333,
+          "controls": 8.333
+        },
+        "k": 65.0
+      },
+      "delivered_mwh": null,
+      "unserved": null,
+      "mrr": 159793,
+      "fit_mid": 0.96,
+      "evals": null,
+      "treasury_state": "watch"
+    },
+    {
+      "scenario": "saas_compete_adapt_s0",
+      "sector": "saas",
+      "family": "compete_adapt",
+      "seed": 0,
+      "seed_tag": "s0",
+      "months": 60,
+      "days": 1826,
+      "endpoint": "horizon_reached",
+      "head_hash": "sha256:17b7db3d9a58b833aba985b2662bc8c1978221bd4967c47583fceb27330f596e",
+      "gateway_calls": 437,
+      "decisions": 260,
+      "inference": {
+        "gen_used": 87400,
+        "input_used": 655500,
+        "tools_used": 437
+      },
+      "cash": 387500,
+      "rev": 5197775,
+      "V": 100.0,
+      "P": 100,
+      "E": 100,
+      "E_raw": 1137.5,
+      "O": 96.99,
+      "CoreScore": 99.4,
+      "o_detail": {
+        "O": 96.99,
+        "categories": {
+          "customer": 100.0,
+          "workforce": 100.0,
+          "financing": 100.0,
+          "controls": 87.97
+        },
+        "burdens": {
+          "customer": 0.0,
+          "workforce": 0.0,
+          "financing": 0.0,
+          "controls": 8.333
+        },
+        "k": 65.0
+      },
+      "delivered_mwh": null,
+      "unserved": null,
+      "mrr": 158920,
+      "fit_mid": 0.96,
+      "evals": null,
+      "treasury_state": "healthy"
+    },
+    {
+      "scenario": "saas_compete_adapt_s1",
+      "sector": "saas",
+      "family": "compete_adapt",
+      "seed": 1,
+      "seed_tag": "s1",
+      "months": 60,
+      "days": 1826,
+      "endpoint": "horizon_reached",
+      "head_hash": "sha256:5397105806a331568dee2edad59771f30e2957b4407e2c27ec61166e50bff377",
+      "gateway_calls": 2666,
+      "decisions": 1285,
+      "inference": {
+        "gen_used": 533200,
+        "input_used": 3999000,
+        "tools_used": 2666
+      },
+      "cash": 7292,
+      "rev": 5257419,
+      "V": 100.0,
+      "P": 100,
+      "E": 0,
+      "E_raw": -3.1,
+      "O": 93.98,
+      "CoreScore": 68.8,
+      "o_detail": {
+        "O": 93.98,
+        "categories": {
+          "customer": 100.0,
+          "workforce": 100.0,
+          "financing": 87.97,
+          "controls": 87.97
+        },
+        "burdens": {
+          "customer": 0.0,
+          "workforce": 0.0,
+          "financing": 8.333,
+          "controls": 8.333
+        },
+        "k": 65.0
+      },
+      "delivered_mwh": null,
+      "unserved": null,
+      "mrr": 161929,
+      "fit_mid": 0.96,
+      "evals": null,
+      "treasury_state": "watch"
+    },
+    {
+      "scenario": "saas_compound_stress_s0",
+      "sector": "saas",
+      "family": "compound_stress",
+      "seed": 0,
+      "seed_tag": "s0",
+      "months": 60,
+      "days": 1826,
+      "endpoint": "horizon_reached",
+      "head_hash": "sha256:ebc731e9c95c552a32a1b995f9faeb7c40b9f81e69fc18676d3ecb7cdffe6bc4",
+      "gateway_calls": 2775,
+      "decisions": 1337,
+      "inference": {
+        "gen_used": 555000,
+        "input_used": 4162500,
+        "tools_used": 2775
+      },
+      "cash": 22917,
+      "rev": 5264947,
+      "V": 100.0,
+      "P": 100,
+      "E": 50.0,
+      "E_raw": 50.0,
+      "O": 93.98,
+      "CoreScore": 83.8,
+      "o_detail": {
+        "O": 93.98,
+        "categories": {
+          "customer": 100.0,
+          "workforce": 100.0,
+          "financing": 87.97,
+          "controls": 87.97
+        },
+        "burdens": {
+          "customer": 0.0,
+          "workforce": 0.0,
+          "financing": 8.333,
+          "controls": 8.333
+        },
+        "k": 65.0
+      },
+      "delivered_mwh": null,
+      "unserved": null,
+      "mrr": 161686,
+      "fit_mid": 0.96,
+      "evals": null,
+      "treasury_state": "watch"
+    },
+    {
+      "scenario": "saas_compound_stress_s1",
+      "sector": "saas",
+      "family": "compound_stress",
+      "seed": 1,
+      "seed_tag": "s1",
+      "months": 60,
+      "days": 1826,
+      "endpoint": "horizon_reached",
+      "head_hash": "sha256:38c69edf1df3e9b88170402980171a5b5639960ac5da587b4a33bd02bb081d24",
+      "gateway_calls": 2551,
+      "decisions": 1234,
+      "inference": {
+        "gen_used": 510200,
+        "input_used": 3826500,
+        "tools_used": 2551
+      },
+      "cash": 21875,
+      "rev": 5244676,
+      "V": 100.0,
+      "P": 100,
+      "E": 47.2,
+      "E_raw": 47.2,
+      "O": 93.98,
+      "CoreScore": 82.96,
+      "o_detail": {
+        "O": 93.98,
+        "categories": {
+          "customer": 100.0,
+          "workforce": 100.0,
+          "financing": 87.97,
+          "controls": 87.97
+        },
+        "burdens": {
+          "customer": 0.0,
+          "workforce": 0.0,
+          "financing": 8.333,
+          "controls": 8.333
+        },
+        "k": 65.0
+      },
+      "delivered_mwh": null,
+      "unserved": null,
+      "mrr": 160857,
+      "fit_mid": 0.96,
+      "evals": null,
+      "treasury_state": "watch"
+    },
+    {
+      "scenario": "ai_lab_build_discover_s0",
+      "sector": "ai_lab",
+      "family": "build_discover",
+      "seed": 0,
+      "seed_tag": "s0",
+      "months": 60,
+      "days": 1826,
+      "endpoint": "horizon_reached",
+      "head_hash": "sha256:9a44cd50d3a6cee4e7413535a812ce60757054cb7f3f910b521b4e1acf8eb166",
+      "gateway_calls": 447,
+      "decisions": 260,
+      "inference": {
+        "gen_used": 89400,
+        "input_used": 670500,
+        "tools_used": 447
+      },
+      "cash": 3222917,
+      "rev": 0,
+      "V": 100.0,
+      "P": 100,
+      "E": 100,
+      "E_raw": 229.3,
+      "O": 100.0,
+      "CoreScore": 100.0,
+      "o_detail": {
+        "O": 100.0,
+        "categories": {
+          "customer": 100.0,
+          "workforce": 100.0,
+          "financing": 100.0,
+          "controls": 100.0
+        },
+        "burdens": {
+          "customer": 0.0,
+          "workforce": 0.0,
+          "financing": 0.0,
+          "controls": 0.0
+        },
+        "k": 65.0
+      },
+      "delivered_mwh": null,
+      "unserved": null,
+      "mrr": null,
+      "fit_mid": null,
+      "evals": 87,
+      "treasury_state": "healthy"
+    },
+    {
+      "scenario": "ai_lab_build_discover_s1",
+      "sector": "ai_lab",
+      "family": "build_discover",
+      "seed": 1,
+      "seed_tag": "s1",
+      "months": 60,
+      "days": 1826,
+      "endpoint": "horizon_reached",
+      "head_hash": "sha256:1fe1a4177dbff708148be9ca8983f5ec9801e56b3c6e8d2624fad089cd2b304c",
+      "gateway_calls": 728,
+      "decisions": 385,
+      "inference": {
+        "gen_used": 145600,
+        "input_used": 1092000,
+        "tools_used": 728
+      },
+      "cash": 90625,
+      "rev": 0,
+      "V": 100.0,
+      "P": 100,
+      "E": 4.3,
+      "E_raw": 4.3,
+      "O": 96.99,
+      "CoreScore": 70.68,
+      "o_detail": {
+        "O": 96.99,
+        "categories": {
+          "customer": 100.0,
+          "workforce": 100.0,
+          "financing": 87.97,
+          "controls": 100.0
+        },
+        "burdens": {
+          "customer": 0.0,
+          "workforce": 0.0,
+          "financing": 8.333,
+          "controls": 0.0
+        },
+        "k": 65.0
+      },
+      "delivered_mwh": null,
+      "unserved": null,
+      "mrr": null,
+      "fit_mid": null,
+      "evals": 87,
+      "treasury_state": "watch"
+    },
+    {
+      "scenario": "ai_lab_scale_finance_s0",
+      "sector": "ai_lab",
+      "family": "scale_finance",
+      "seed": 0,
+      "seed_tag": "s0",
+      "months": 60,
+      "days": 1826,
+      "endpoint": "horizon_reached",
+      "head_hash": "sha256:8bd7e688a78b59119125d0dbf2aaa746a35bd31c7cef134e48102c816a80ac36",
+      "gateway_calls": 675,
+      "decisions": 360,
+      "inference": {
+        "gen_used": 135000,
+        "input_used": 1012500,
+        "tools_used": 675
+      },
+      "cash": 47917,
+      "rev": 0,
+      "V": 100.0,
+      "P": 100,
+      "E": 0.6,
+      "E_raw": 0.6,
+      "O": 96.99,
+      "CoreScore": 69.57,
+      "o_detail": {
+        "O": 96.99,
+        "categories": {
+          "customer": 100.0,
+          "workforce": 100.0,
+          "financing": 87.97,
+          "controls": 100.0
+        },
+        "burdens": {
+          "customer": 0.0,
+          "workforce": 0.0,
+          "financing": 8.333,
+          "controls": 0.0
+        },
+        "k": 65.0
+      },
+      "delivered_mwh": null,
+      "unserved": null,
+      "mrr": null,
+      "fit_mid": null,
+      "evals": 87,
+      "treasury_state": "watch"
+    },
+    {
+      "scenario": "ai_lab_scale_finance_s1",
+      "sector": "ai_lab",
+      "family": "scale_finance",
+      "seed": 1,
+      "seed_tag": "s1",
+      "months": 60,
+      "days": 1826,
+      "endpoint": "horizon_reached",
+      "head_hash": "sha256:9b02b2009a72eb01c5fc381d1c1b5a9ad4c6eef3211f423469a4ebf32db891e7",
+      "gateway_calls": 449,
+      "decisions": 260,
+      "inference": {
+        "gen_used": 89800,
+        "input_used": 673500,
+        "tools_used": 449
+      },
+      "cash": 2057292,
+      "rev": 0,
+      "V": 100.0,
+      "P": 100,
+      "E": 100,
+      "E_raw": 105.8,
+      "O": 100.0,
+      "CoreScore": 100.0,
+      "o_detail": {
+        "O": 100.0,
+        "categories": {
+          "customer": 100.0,
+          "workforce": 100.0,
+          "financing": 100.0,
+          "controls": 100.0
+        },
+        "burdens": {
+          "customer": 0.0,
+          "workforce": 0.0,
+          "financing": 0.0,
+          "controls": 0.0
+        },
+        "k": 65.0
+      },
+      "delivered_mwh": null,
+      "unserved": null,
+      "mrr": null,
+      "fit_mid": null,
+      "evals": 87,
+      "treasury_state": "healthy"
+    },
+    {
+      "scenario": "ai_lab_compete_adapt_s0",
+      "sector": "ai_lab",
+      "family": "compete_adapt",
+      "seed": 0,
+      "seed_tag": "s0",
+      "months": 60,
+      "days": 1826,
+      "endpoint": "horizon_reached",
+      "head_hash": "sha256:fa51d45a819bca97cebeddf16bfed7acafee449f6eac7bb4e29feb5a558a651d",
+      "gateway_calls": 1011,
+      "decisions": 514,
+      "inference": {
+        "gen_used": 202200,
+        "input_used": 1516500,
+        "tools_used": 1011
+      },
+      "cash": 98959,
+      "rev": 0,
+      "V": 100.0,
+      "P": 100,
+      "E": 2.4,
+      "E_raw": 2.4,
+      "O": 96.99,
+      "CoreScore": 70.11,
+      "o_detail": {
+        "O": 96.99,
+        "categories": {
+          "customer": 100.0,
+          "workforce": 100.0,
+          "financing": 87.97,
+          "controls": 100.0
+        },
+        "burdens": {
+          "customer": 0.0,
+          "workforce": 0.0,
+          "financing": 8.333,
+          "controls": 0.0
+        },
+        "k": 65.0
+      },
+      "delivered_mwh": null,
+      "unserved": null,
+      "mrr": null,
+      "fit_mid": null,
+      "evals": 87,
+      "treasury_state": "watch"
+    },
+    {
+      "scenario": "ai_lab_compete_adapt_s1",
+      "sector": "ai_lab",
+      "family": "compete_adapt",
+      "seed": 1,
+      "seed_tag": "s1",
+      "months": 60,
+      "days": 1826,
+      "endpoint": "horizon_reached",
+      "head_hash": "sha256:a7ee5445ab7e70aec01eaa1b106d30325b586f14018ee121ae2cd846d7c449ac",
+      "gateway_calls": 558,
+      "decisions": 308,
+      "inference": {
+        "gen_used": 111600,
+        "input_used": 837000,
+        "tools_used": 558
+      },
+      "cash": 44792,
+      "rev": 0,
+      "V": 100.0,
+      "P": 100,
+      "E": 0.7,
+      "E_raw": 0.7,
+      "O": 96.99,
+      "CoreScore": 69.61,
+      "o_detail": {
+        "O": 96.99,
+        "categories": {
+          "customer": 100.0,
+          "workforce": 100.0,
+          "financing": 87.97,
+          "controls": 100.0
+        },
+        "burdens": {
+          "customer": 0.0,
+          "workforce": 0.0,
+          "financing": 8.333,
+          "controls": 0.0
+        },
+        "k": 65.0
+      },
+      "delivered_mwh": null,
+      "unserved": null,
+      "mrr": null,
+      "fit_mid": null,
+      "evals": 87,
+      "treasury_state": "watch"
+    },
+    {
+      "scenario": "ai_lab_compound_stress_s0",
+      "sector": "ai_lab",
+      "family": "compound_stress",
+      "seed": 0,
+      "seed_tag": "s0",
+      "months": 60,
+      "days": 1826,
+      "endpoint": "horizon_reached",
+      "head_hash": "sha256:e9d2cb9a144b29ebc833a33da570396e7ef2dba25c71f8f0a9410b21c62821c7",
+      "gateway_calls": 450,
+      "decisions": 260,
+      "inference": {
+        "gen_used": 90000,
+        "input_used": 675000,
+        "tools_used": 450
+      },
+      "cash": 1768750,
+      "rev": 0,
+      "V": 100.0,
+      "P": 100,
+      "E": 100,
+      "E_raw": 105.2,
+      "O": 100.0,
+      "CoreScore": 100.0,
+      "o_detail": {
+        "O": 100.0,
+        "categories": {
+          "customer": 100.0,
+          "workforce": 100.0,
+          "financing": 100.0,
+          "controls": 100.0
+        },
+        "burdens": {
+          "customer": 0.0,
+          "workforce": 0.0,
+          "financing": 0.0,
+          "controls": 0.0
+        },
+        "k": 65.0
+      },
+      "delivered_mwh": null,
+      "unserved": null,
+      "mrr": null,
+      "fit_mid": null,
+      "evals": 87,
+      "treasury_state": "healthy"
+    },
+    {
+      "scenario": "ai_lab_compound_stress_s1",
+      "sector": "ai_lab",
+      "family": "compound_stress",
+      "seed": 1,
+      "seed_tag": "s1",
+      "months": 60,
+      "days": 1826,
+      "endpoint": "horizon_reached",
+      "head_hash": "sha256:8f82621e40b6ff1e701aff5f1530c91c311d9d007e5f130ef55e0365e44d1ed7",
+      "gateway_calls": 449,
+      "decisions": 260,
+      "inference": {
+        "gen_used": 89800,
+        "input_used": 673500,
+        "tools_used": 449
+      },
+      "cash": 1171875,
+      "rev": 0,
+      "V": 100.0,
+      "P": 100,
+      "E": 69.0,
+      "E_raw": 69.0,
+      "O": 100.0,
+      "CoreScore": 90.7,
+      "o_detail": {
+        "O": 100.0,
+        "categories": {
+          "customer": 100.0,
+          "workforce": 100.0,
+          "financing": 100.0,
+          "controls": 100.0
+        },
+        "burdens": {
+          "customer": 0.0,
+          "workforce": 0.0,
+          "financing": 0.0,
+          "controls": 0.0
+        },
+        "k": 65.0
+      },
+      "delivered_mwh": null,
+      "unserved": null,
+      "mrr": null,
+      "fit_mid": null,
+      "evals": 87,
+      "treasury_state": "healthy"
+    },
+    {
+      "scenario": "electricity_build_discover_s0",
+      "sector": "electricity",
+      "family": "build_discover",
+      "seed": 0,
+      "seed_tag": "s0",
+      "months": 60,
+      "days": 1826,
+      "endpoint": "horizon_reached",
+      "head_hash": "sha256:12dd79deb9f8e408a4cdc22c2750d3d215d28c095c38262e07e0be5af839d14e",
+      "gateway_calls": 339,
+      "decisions": 260,
+      "inference": {
+        "gen_used": 67800,
+        "input_used": 508500,
+        "tools_used": 339
+      },
+      "cash": 473606,
+      "rev": 2864262,
+      "V": 100.0,
+      "P": 95.2,
+      "E": 0,
+      "E_raw": -15.4,
+      "O": 96.99,
+      "CoreScore": 68.2,
+      "o_detail": {
+        "O": 96.99,
+        "categories": {
+          "customer": 100.0,
+          "workforce": 100.0,
+          "financing": 87.97,
+          "controls": 100.0
+        },
+        "burdens": {
+          "customer": 0.0,
+          "workforce": 0.0,
+          "financing": 8.333,
+          "controls": 0.0
+        },
+        "k": 65.0
+      },
+      "delivered_mwh": 904504,
+      "unserved": 4872,
+      "mrr": null,
+      "fit_mid": null,
+      "evals": null,
+      "treasury_state": "watch"
+    },
+    {
+      "scenario": "electricity_build_discover_s1",
+      "sector": "electricity",
+      "family": "build_discover",
+      "seed": 1,
+      "seed_tag": "s1",
+      "months": 60,
+      "days": 1826,
+      "endpoint": "horizon_reached",
+      "head_hash": "sha256:6a6025a4aa222781190f07d98d5048f82a899a9c4d937d99b2eb886693e2eb42",
+      "gateway_calls": 339,
+      "decisions": 260,
+      "inference": {
+        "gen_used": 67800,
+        "input_used": 508500,
+        "tools_used": 339
+      },
+      "cash": 3951765,
+      "rev": 3007490,
+      "V": 100.0,
+      "P": 85.0,
+      "E": 100,
+      "E_raw": 121.1,
+      "O": 96.99,
+      "CoreScore": 95.64,
+      "o_detail": {
+        "O": 96.99,
+        "categories": {
+          "customer": 100.0,
+          "workforce": 100.0,
+          "financing": 87.97,
+          "controls": 100.0
+        },
+        "burdens": {
+          "customer": 0.0,
+          "workforce": 0.0,
+          "financing": 8.333,
+          "controls": 0.0
+        },
+        "k": 65.0
+      },
+      "delivered_mwh": 949734,
+      "unserved": 6250,
+      "mrr": null,
+      "fit_mid": null,
+      "evals": null,
+      "treasury_state": "watch"
+    },
+    {
+      "scenario": "electricity_scale_finance_s0",
+      "sector": "electricity",
+      "family": "scale_finance",
+      "seed": 0,
+      "seed_tag": "s0",
+      "months": 60,
+      "days": 1826,
+      "endpoint": "horizon_reached",
+      "head_hash": "sha256:501642fd615fceb9dcaa77b7e24f91900fc0e2e9de64e89b87fc777f22824adb",
+      "gateway_calls": 341,
+      "decisions": 260,
+      "inference": {
+        "gen_used": 68200,
+        "input_used": 511500,
+        "tools_used": 341
+      },
+      "cash": 524900,
+      "rev": 2941950,
+      "V": 100.0,
+      "P": 82.8,
+      "E": 0,
+      "E_raw": -21.4,
+      "O": 96.99,
+      "CoreScore": 65.1,
+      "o_detail": {
+        "O": 96.99,
+        "categories": {
+          "customer": 100.0,
+          "workforce": 100.0,
+          "financing": 87.97,
+          "controls": 100.0
+        },
+        "burdens": {
+          "customer": 0.0,
+          "workforce": 0.0,
+          "financing": 8.333,
+          "controls": 0.0
+        },
+        "k": 65.0
+      },
+      "delivered_mwh": 929037,
+      "unserved": 5996,
+      "mrr": null,
+      "fit_mid": null,
+      "evals": null,
+      "treasury_state": "watch"
+    },
+    {
+      "scenario": "electricity_scale_finance_s1",
+      "sector": "electricity",
+      "family": "scale_finance",
+      "seed": 1,
+      "seed_tag": "s1",
+      "months": 60,
+      "days": 1826,
+      "endpoint": "horizon_reached",
+      "head_hash": "sha256:f492860b4f3b17e9f8f051f3548e1d9e2e1d0bf7193de1932452ccc2db6a3af3",
+      "gateway_calls": 341,
+      "decisions": 260,
+      "inference": {
+        "gen_used": 68200,
+        "input_used": 511500,
+        "tools_used": 341
+      },
+      "cash": 1493875,
+      "rev": 2949734,
+      "V": 100.0,
+      "P": 83.1,
+      "E": 22.0,
+      "E_raw": 22.0,
+      "O": 96.99,
+      "CoreScore": 71.77,
+      "o_detail": {
+        "O": 96.99,
+        "categories": {
+          "customer": 100.0,
+          "workforce": 100.0,
+          "financing": 87.97,
+          "controls": 100.0
+        },
+        "burdens": {
+          "customer": 0.0,
+          "workforce": 0.0,
+          "financing": 8.333,
+          "controls": 0.0
+        },
+        "k": 65.0
+      },
+      "delivered_mwh": 931495,
+      "unserved": 5577,
+      "mrr": null,
+      "fit_mid": null,
+      "evals": null,
+      "treasury_state": "watch"
+    },
+    {
+      "scenario": "electricity_compete_adapt_s0",
+      "sector": "electricity",
+      "family": "compete_adapt",
+      "seed": 0,
+      "seed_tag": "s0",
+      "months": 60,
+      "days": 1826,
+      "endpoint": "horizon_reached",
+      "head_hash": "sha256:680a75595718e58f1b43c864d76a97e4e1d70b051ff1dd3df99a8c48f1824194",
+      "gateway_calls": 341,
+      "decisions": 260,
+      "inference": {
+        "gen_used": 68200,
+        "input_used": 511500,
+        "tools_used": 341
+      },
+      "cash": 4789537,
+      "rev": 3114652,
+      "V": 100.0,
+      "P": 85,
+      "E": 100,
+      "E_raw": 149.6,
+      "O": 96.99,
+      "CoreScore": 95.65,
+      "o_detail": {
+        "O": 96.99,
+        "categories": {
+          "customer": 100.0,
+          "workforce": 100.0,
+          "financing": 87.97,
+          "controls": 100.0
+        },
+        "burdens": {
+          "customer": 0.0,
+          "workforce": 0.0,
+          "financing": 8.333,
+          "controls": 0.0
+        },
+        "k": 65.0
+      },
+      "delivered_mwh": 983574,
+      "unserved": 6876,
+      "mrr": null,
+      "fit_mid": null,
+      "evals": null,
+      "treasury_state": "watch"
+    },
+    {
+      "scenario": "electricity_compete_adapt_s1",
+      "sector": "electricity",
+      "family": "compete_adapt",
+      "seed": 1,
+      "seed_tag": "s1",
+      "months": 60,
+      "days": 1826,
+      "endpoint": "horizon_reached",
+      "head_hash": "sha256:d6653f9254f953129e384fbcba9c5de59a7d3bb14287b9148846abd0832001db",
+      "gateway_calls": 341,
+      "decisions": 260,
+      "inference": {
+        "gen_used": 68200,
+        "input_used": 511500,
+        "tools_used": 341
+      },
+      "cash": 2437373,
+      "rev": 3229557,
+      "V": 100.0,
+      "P": 85,
+      "E": 67.0,
+      "E_raw": 67.0,
+      "O": 78.24,
+      "CoreScore": 82.01,
+      "o_detail": {
+        "O": 78.24,
+        "categories": {
+          "customer": 25.0,
+          "workforce": 100.0,
+          "financing": 87.97,
+          "controls": 100.0
+        },
+        "burdens": {
+          "customer": 33.333,
+          "workforce": 0.0,
+          "financing": 8.333,
+          "controls": 0.0
+        },
+        "k": 65.0
+      },
+      "delivered_mwh": 1019860,
+      "unserved": 8201,
+      "mrr": null,
+      "fit_mid": null,
+      "evals": null,
+      "treasury_state": "watch"
+    },
+    {
+      "scenario": "electricity_compound_stress_s0",
+      "sector": "electricity",
+      "family": "compound_stress",
+      "seed": 0,
+      "seed_tag": "s0",
+      "months": 60,
+      "days": 1826,
+      "endpoint": "horizon_reached",
+      "head_hash": "sha256:7de0e8a87de992f4c122016f0c83a56a78d3906ce2add1c00ee417d11e14f6d1",
+      "gateway_calls": 342,
+      "decisions": 260,
+      "inference": {
+        "gen_used": 68400,
+        "input_used": 513000,
+        "tools_used": 342
+      },
+      "cash": 2049038,
+      "rev": 2933958,
+      "V": 100.0,
+      "P": 82.5,
+      "E": 56.0,
+      "E_raw": 56.0,
+      "O": 96.99,
+      "CoreScore": 81.84,
+      "o_detail": {
+        "O": 96.99,
+        "categories": {
+          "customer": 100.0,
+          "workforce": 100.0,
+          "financing": 87.97,
+          "controls": 100.0
+        },
+        "burdens": {
+          "customer": 0.0,
+          "workforce": 0.0,
+          "financing": 8.333,
+          "controls": 0.0
+        },
+        "k": 65.0
+      },
+      "delivered_mwh": 926513,
+      "unserved": 5904,
+      "mrr": null,
+      "fit_mid": null,
+      "evals": null,
+      "treasury_state": "watch"
+    },
+    {
+      "scenario": "electricity_compound_stress_s1",
+      "sector": "electricity",
+      "family": "compound_stress",
+      "seed": 1,
+      "seed_tag": "s1",
+      "months": 60,
+      "days": 1826,
+      "endpoint": "horizon_reached",
+      "head_hash": "sha256:8749947c62ade899669c8f4751b3d547f60691b92e4b16a9fceadc7dc7b1ae0c",
+      "gateway_calls": 679,
+      "decisions": 411,
+      "inference": {
+        "gen_used": 135800,
+        "input_used": 1018500,
+        "tools_used": 679
+      },
+      "cash": -15399,
+      "rev": 2852079,
+      "V": 100.0,
+      "P": 79.8,
+      "E": 0,
+      "E_raw": -25.2,
+      "O": 96.99,
+      "CoreScore": 64.35,
+      "o_detail": {
+        "O": 96.99,
+        "categories": {
+          "customer": 100.0,
+          "workforce": 100.0,
+          "financing": 87.97,
+          "controls": 100.0
+        },
+        "burdens": {
+          "customer": 0.0,
+          "workforce": 0.0,
+          "financing": 8.333,
+          "controls": 0.0
+        },
+        "k": 65.0
+      },
+      "delivered_mwh": 900657,
+      "unserved": 5430,
+      "mrr": null,
+      "fit_mid": null,
+      "evals": null,
+      "treasury_state": "cure_period"
+    }
+  ],
+  "long_horizon": [
+    {
+      "scenario": "saas_build_discover_lh0",
+      "sector": "saas",
+      "family": "build_discover",
+      "seed": 0,
+      "seed_tag": "lh0",
+      "months": 120,
+      "days": 3652,
+      "endpoint": "horizon_reached",
+      "head_hash": "sha256:6715c160575ce536e8fd354934d2ee473bea0edb41e9e7f319036fff8fa53e26",
+      "gateway_calls": 4036,
+      "decisions": 2906,
+      "inference": {
+        "gen_used": 807200,
+        "input_used": 6054000,
+        "tools_used": 4036
+      },
+      "cash": 13542,
+      "rev": 18536685,
+      "V": 100.0,
+      "P": 100,
+      "E": 25.9,
+      "E_raw": 25.9,
+      "O": 93.98,
+      "CoreScore": 76.58,
+      "o_detail": {
+        "O": 93.98,
+        "categories": {
+          "customer": 100.0,
+          "workforce": 100.0,
+          "financing": 87.97,
+          "controls": 87.97
+        },
+        "burdens": {
+          "customer": 0.0,
+          "workforce": 0.0,
+          "financing": 8.333,
+          "controls": 8.333
+        },
+        "k": 65.0
+      },
+      "delivered_mwh": null,
+      "unserved": null,
+      "mrr": 261613,
+      "fit_mid": 0.96,
+      "evals": null,
+      "treasury_state": "watch"
+    },
+    {
+      "scenario": "ai_lab_build_discover_lh0",
+      "sector": "ai_lab",
+      "family": "build_discover",
+      "seed": 0,
+      "seed_tag": "lh0",
+      "months": 120,
+      "days": 3652,
+      "endpoint": "horizon_reached",
+      "head_hash": "sha256:c25f3a5a907f4b131d197de30fba5f998a0fcbd47ce8c20befdf3f2e8a4c5046",
+      "gateway_calls": 2147,
+      "decisions": 1363,
+      "inference": {
+        "gen_used": 429400,
+        "input_used": 3220500,
+        "tools_used": 2147
+      },
+      "cash": 1042,
+      "rev": 0,
+      "V": 100.0,
+      "P": 100,
+      "E": 0,
+      "E_raw": -2.2,
+      "O": 96.99,
+      "CoreScore": 69.4,
+      "o_detail": {
+        "O": 96.99,
+        "categories": {
+          "customer": 100.0,
+          "workforce": 100.0,
+          "financing": 87.97,
+          "controls": 100.0
+        },
+        "burdens": {
+          "customer": 0.0,
+          "workforce": 0.0,
+          "financing": 8.333,
+          "controls": 0.0
+        },
+        "k": 65.0
+      },
+      "delivered_mwh": null,
+      "unserved": null,
+      "mrr": null,
+      "fit_mid": null,
+      "evals": 174,
+      "treasury_state": "watch"
+    },
+    {
+      "scenario": "electricity_build_discover_lh0",
+      "sector": "electricity",
+      "family": "build_discover",
+      "seed": 0,
+      "seed_tag": "lh0",
+      "months": 120,
+      "days": 3652,
+      "endpoint": "horizon_reached",
+      "head_hash": "sha256:11574d8657770565ee52639a99832401a89f5ae8742a4f0a889119a2224fd520",
+      "gateway_calls": 666,
+      "decisions": 521,
+      "inference": {
+        "gen_used": 133200,
+        "input_used": 999000,
+        "tools_used": 666
+      },
+      "cash": 445696,
+      "rev": 5951603,
+      "V": 100.0,
+      "P": 85,
+      "E": 0,
+      "E_raw": -16.5,
+      "O": 78.24,
+      "CoreScore": 61.9,
+      "o_detail": {
+        "O": 78.24,
+        "categories": {
+          "customer": 25.0,
+          "workforce": 100.0,
+          "financing": 87.97,
+          "controls": 100.0
+        },
+        "burdens": {
+          "customer": 33.333,
+          "workforce": 0.0,
+          "financing": 8.333,
+          "controls": 0.0
+        },
+        "k": 65.0
+      },
+      "delivered_mwh": 1879453,
+      "unserved": 11990,
+      "mrr": null,
+      "fit_mid": null,
+      "evals": null,
+      "treasury_state": "watch"
+    }
+  ],
+  "decade": {
+    "scenario": "saas_build_discover_decade",
+    "sector": "saas",
+    "family": "build_discover",
+    "seed": 0,
+    "seed_tag": "decade",
+    "months": 240,
+    "days": 7305,
+    "endpoint": "horizon_reached",
+    "head_hash": "sha256:6bcce4ed307111607d5d77b7ae58444e905f01997a9b6e44e962a0e5b274b974",
+    "gateway_calls": 12036,
+    "decisions": 6713,
+    "inference": {
+      "gen_used": 2407200,
+      "input_used": 18054000,
+      "tools_used": 12036
+    },
+    "cash": 12500,
+    "rev": 58436462,
+    "V": 100.0,
+    "P": 100,
+    "E": 22.2,
+    "E_raw": 22.2,
+    "O": 93.98,
+    "CoreScore": 75.46,
+    "o_detail": {
+      "O": 93.98,
+      "categories": {
+        "customer": 100.0,
+        "workforce": 100.0,
+        "financing": 87.97,
+        "controls": 87.97
+      },
+      "burdens": {
+        "customer": 0.0,
+        "workforce": 0.0,
+        "financing": 8.333,
+        "controls": 8.333
+      },
+      "k": 65.0
+    },
+    "delivered_mwh": null,
+    "unserved": null,
+    "mrr": 367413,
+    "fit_mid": 0.96,
+    "evals": null,
+    "treasury_state": "watch"
+  },
+  "budget": {
+    "total_calls": 26354,
+    "total_gen": 5270800
+  },
+  "baseline": {
+    "model": "muse-spark-1.2-contributor-free",
+    "overall": 71.32,
+    "saas": 73.1,
+    "ai_lab": 62.8,
+    "electricity": 78.1
+  },
+  "notes": "Self-bench via Gateway (same tools as ranked submissions). No hidden-state access. Decades run demonstrates persistence to 240m if survived."
+}

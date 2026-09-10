@@ -1,0 +1,867 @@
+{
+  "model": "devin-live",
+  "scenario": "saas_build_discover_s0",
+  "sector": "saas",
+  "family": "build_discover",
+  "seed": 0,
+  "months": 60,
+  "days": 1826,
+  "endpoint": "horizon_reached",
+  "head_hash": "sha256:c1eb6b9cd11c71724d2882a5bfaad9fdd64605729fb8bf07e1dd5ee0da1d8997",
+  "gateway_calls": 98,
+  "decisions": 46,
+  "wall_s": 1145.2,
+  "cadence_days": 90,
+  "V": 100.0,
+  "P": 100,
+  "E": 14.8,
+  "E_raw": 14.8,
+  "O": 93.98,
+  "CoreScore": 73.24,
+  "cash": 10417,
+  "rev": 4989015,
+  "mrr": 174354,
+  "fit_mid": 0.96,
+  "trials": 124,
+  "evals": null,
+  "delivered_mwh": null,
+  "unserved": null,
+  "treasury_state": "watch",
+  "call_log": [
+    {
+      "day": 8,
+      "tool": "finance.statement",
+      "args": {
+        "kind": "all"
+      }
+    },
+    {
+      "day": 8,
+      "tool": "product.configure",
+      "args": {
+        "components": {
+          "core_workflow": 3,
+          "reporting": 3,
+          "integrations": 3
+        }
+      }
+    },
+    {
+      "day": 8,
+      "tool": "sales.campaign",
+      "args": {
+        "trials": 24
+      }
+    },
+    {
+      "day": 8,
+      "tool": "finance.set_treasury_policy",
+      "args": {
+        "reserve_minor": 21875000
+      }
+    },
+    {
+      "day": 71,
+      "tool": "sales.campaign",
+      "args": {
+        "trials": 24
+      }
+    },
+    {
+      "day": 71,
+      "tool": "board.submit",
+      "args": {
+        "matter": "report",
+        "evidence": {
+          "mrr_mcu": 13824,
+          "fit_mid": 0.96,
+          "cash_mcu": 1354167
+        }
+      }
+    },
+    {
+      "day": 134,
+      "tool": "incidents.respond",
+      "args": {
+        "mitigation": "contain_and_fix"
+      }
+    },
+    {
+      "day": 134,
+      "tool": "sales.campaign",
+      "args": {
+        "trials": 24
+      }
+    },
+    {
+      "day": 197,
+      "tool": "incidents.respond",
+      "args": {
+        "mitigation": "contain_and_fix"
+      }
+    },
+    {
+      "day": 197,
+      "tool": "sales.campaign",
+      "args": {
+        "trials": 24
+      }
+    },
+    {
+      "day": 260,
+      "tool": "sales.campaign",
+      "args": {
+        "trials": 24
+      }
+    },
+    {
+      "day": 260,
+      "tool": "board.submit",
+      "args": {
+        "matter": "report",
+        "evidence": {
+          "mrr_mcu": 23441,
+          "fit_mid": 0.96,
+          "cash_mcu": 916667
+        }
+      }
+    },
+    {
+      "day": 323,
+      "tool": "incidents.respond",
+      "args": {
+        "mitigation": "contain_and_fix"
+      }
+    },
+    {
+      "day": 323,
+      "tool": "sales.campaign",
+      "args": {
+        "trials": 24
+      }
+    },
+    {
+      "day": 386,
+      "tool": "sales.campaign",
+      "args": {
+        "trials": 24
+      }
+    },
+    {
+      "day": 386,
+      "tool": "board.submit",
+      "args": {
+        "matter": "report",
+        "evidence": {
+          "mrr_mcu": 31435,
+          "fit_mid": 0.96,
+          "regime": "recession",
+          "cash_mcu": 625000
+        }
+      }
+    },
+    {
+      "day": 449,
+      "tool": "incidents.respond",
+      "args": {
+        "mitigation": "contain_and_fix"
+      }
+    },
+    {
+      "day": 449,
+      "tool": "sales.campaign",
+      "args": {
+        "trials": 24
+      }
+    },
+    {
+      "day": 449,
+      "tool": "board.submit",
+      "args": {
+        "matter": "report",
+        "evidence": {
+          "mrr_mcu": 35155,
+          "fit_mid": 0.96,
+          "all_incidents_responded": true
+        }
+      }
+    },
+    {
+      "day": 512,
+      "tool": "incidents.respond",
+      "args": {
+        "mitigation": "contain_and_fix"
+      }
+    },
+    {
+      "day": 512,
+      "tool": "sales.campaign",
+      "args": {
+        "trials": 24
+      }
+    },
+    {
+      "day": 540,
+      "tool": "funding.open_process",
+      "args": {
+        "kind": "equity",
+        "target_mcu": 3000000
+      }
+    },
+    {
+      "day": 540,
+      "tool": "sales.campaign",
+      "args": {
+        "trials": 24
+      }
+    },
+    {
+      "day": 540,
+      "tool": "board.submit",
+      "args": {
+        "matter": "report",
+        "evidence": {
+          "mrr_mcu": 42143,
+          "growth_mom_pct": 7,
+          "runway_mo": 2.6,
+          "raising": true
+        }
+      }
+    },
+    {
+      "day": 583,
+      "tool": "incidents.respond",
+      "args": {
+        "mitigation": "contain_and_fix"
+      }
+    },
+    {
+      "day": 583,
+      "tool": "sales.campaign",
+      "args": {
+        "trials": 24
+      }
+    },
+    {
+      "day": 630,
+      "tool": "sales.campaign",
+      "args": {
+        "trials": 24
+      }
+    },
+    {
+      "day": 630,
+      "tool": "board.submit",
+      "args": {
+        "matter": "report",
+        "evidence": {
+          "mrr_mcu": 48941,
+          "fit_mid": 0.96,
+          "cash_low_watch": true,
+          "mitigations_active": true
+        }
+      }
+    },
+    {
+      "day": 680,
+      "tool": "incidents.respond",
+      "args": {
+        "mitigation": "contain_and_fix"
+      }
+    },
+    {
+      "day": 680,
+      "tool": "sales.campaign",
+      "args": {
+        "trials": 24
+      }
+    },
+    {
+      "day": 720,
+      "tool": "sales.campaign",
+      "args": {
+        "trials": 24
+      }
+    },
+    {
+      "day": 720,
+      "tool": "board.submit",
+      "args": {
+        "matter": "report",
+        "evidence": {
+          "mrr_mcu": 56654,
+          "fit_mid": 0.96,
+          "regime": "expansion",
+          "cash_watch": true
+        }
+      }
+    },
+    {
+      "day": 777,
+      "tool": "incidents.respond",
+      "args": {
+        "mitigation": "contain_and_fix"
+      }
+    },
+    {
+      "day": 777,
+      "tool": "sales.campaign",
+      "args": {
+        "trials": 24
+      }
+    },
+    {
+      "day": 810,
+      "tool": "sales.campaign",
+      "args": {
+        "trials": 24
+      }
+    },
+    {
+      "day": 810,
+      "tool": "board.submit",
+      "args": {
+        "matter": "report",
+        "evidence": {
+          "mrr_mcu": 64206,
+          "fit_mid": 0.96,
+          "note": "cash at world-fixed floor, operations stable"
+        }
+      }
+    },
+    {
+      "day": 870,
+      "tool": "sales.campaign",
+      "args": {
+        "trials": 24
+      }
+    },
+    {
+      "day": 870,
+      "tool": "board.submit",
+      "args": {
+        "matter": "report",
+        "evidence": {
+          "mrr_mcu": 69284,
+          "fit_mid": 0.96,
+          "quarterly": "Y3Q2"
+        }
+      }
+    },
+    {
+      "day": 874,
+      "tool": "incidents.respond",
+      "args": {
+        "mitigation": "contain_and_fix"
+      }
+    },
+    {
+      "day": 874,
+      "tool": "sales.campaign",
+      "args": {
+        "trials": 24
+      }
+    },
+    {
+      "day": 900,
+      "tool": "sales.campaign",
+      "args": {
+        "trials": 24
+      }
+    },
+    {
+      "day": 900,
+      "tool": "board.submit",
+      "args": {
+        "matter": "report",
+        "evidence": {
+          "mrr_mcu": 72397,
+          "fit_mid": 0.96
+        }
+      }
+    },
+    {
+      "day": 960,
+      "tool": "sales.campaign",
+      "args": {
+        "trials": 24
+      }
+    },
+    {
+      "day": 960,
+      "tool": "board.submit",
+      "args": {
+        "matter": "report",
+        "evidence": {
+          "mrr_mcu": 78555,
+          "fit_mid": 0.96
+        }
+      }
+    },
+    {
+      "day": 971,
+      "tool": "incidents.respond",
+      "args": {
+        "mitigation": "contain_and_fix"
+      }
+    },
+    {
+      "day": 971,
+      "tool": "sales.campaign",
+      "args": {
+        "trials": 24
+      }
+    },
+    {
+      "day": 971,
+      "tool": "board.submit",
+      "args": {
+        "matter": "report",
+        "evidence": {
+          "mrr_mcu": 78555,
+          "fit_mid": 0.96,
+          "reporting_updated": true
+        }
+      }
+    },
+    {
+      "day": 990,
+      "tool": "sales.campaign",
+      "args": {
+        "trials": 24
+      }
+    },
+    {
+      "day": 990,
+      "tool": "board.submit",
+      "args": {
+        "matter": "report",
+        "evidence": {
+          "mrr_mcu": 82403,
+          "fit_mid": 0.96
+        }
+      }
+    },
+    {
+      "day": 1050,
+      "tool": "sales.campaign",
+      "args": {
+        "trials": 24
+      }
+    },
+    {
+      "day": 1050,
+      "tool": "board.submit",
+      "args": {
+        "matter": "report",
+        "evidence": {
+          "mrr_mcu": 89217,
+          "fit_mid": 0.96
+        }
+      }
+    },
+    {
+      "day": 1068,
+      "tool": "incidents.respond",
+      "args": {
+        "mitigation": "contain_and_fix"
+      }
+    },
+    {
+      "day": 1068,
+      "tool": "sales.campaign",
+      "args": {
+        "trials": 24
+      }
+    },
+    {
+      "day": 1080,
+      "tool": "sales.campaign",
+      "args": {
+        "trials": 24
+      }
+    },
+    {
+      "day": 1080,
+      "tool": "board.submit",
+      "args": {
+        "matter": "report",
+        "evidence": {
+          "mrr_mcu": 92990,
+          "fit_mid": 0.96
+        }
+      }
+    },
+    {
+      "day": 1140,
+      "tool": "sales.campaign",
+      "args": {
+        "trials": 24
+      }
+    },
+    {
+      "day": 1140,
+      "tool": "board.submit",
+      "args": {
+        "matter": "report",
+        "evidence": {
+          "mrr_mcu": 100454,
+          "fit_mid": 0.96,
+          "milestone": "mrr_100k"
+        }
+      }
+    },
+    {
+      "day": 1165,
+      "tool": "incidents.respond",
+      "args": {
+        "mitigation": "contain_and_fix"
+      }
+    },
+    {
+      "day": 1165,
+      "tool": "sales.campaign",
+      "args": {
+        "trials": 24
+      }
+    },
+    {
+      "day": 1170,
+      "tool": "sales.campaign",
+      "args": {
+        "trials": 24
+      }
+    },
+    {
+      "day": 1170,
+      "tool": "board.submit",
+      "args": {
+        "matter": "report",
+        "evidence": {
+          "mrr_mcu": 104547,
+          "fit_mid": 0.96
+        }
+      }
+    },
+    {
+      "day": 1230,
+      "tool": "sales.campaign",
+      "args": {
+        "trials": 24
+      }
+    },
+    {
+      "day": 1230,
+      "tool": "board.submit",
+      "args": {
+        "matter": "report",
+        "evidence": {
+          "mrr_mcu": 111849,
+          "fit_mid": 0.96
+        }
+      }
+    },
+    {
+      "day": 1260,
+      "tool": "sales.campaign",
+      "args": {
+        "trials": 24
+      }
+    },
+    {
+      "day": 1260,
+      "tool": "board.submit",
+      "args": {
+        "matter": "report",
+        "evidence": {
+          "mrr_mcu": 115063,
+          "fit_mid": 0.96
+        }
+      }
+    },
+    {
+      "day": 1262,
+      "tool": "incidents.respond",
+      "args": {
+        "mitigation": "contain_and_fix"
+      }
+    },
+    {
+      "day": 1262,
+      "tool": "sales.campaign",
+      "args": {
+        "trials": 24
+      }
+    },
+    {
+      "day": 1322,
+      "tool": "sales.campaign",
+      "args": {
+        "trials": 24
+      }
+    },
+    {
+      "day": 1322,
+      "tool": "board.submit",
+      "args": {
+        "matter": "report",
+        "evidence": {
+          "mrr_mcu": 122614,
+          "fit_mid": 0.96
+        }
+      }
+    },
+    {
+      "day": 1350,
+      "tool": "sales.campaign",
+      "args": {
+        "trials": 24
+      }
+    },
+    {
+      "day": 1350,
+      "tool": "board.submit",
+      "args": {
+        "matter": "report",
+        "evidence": {
+          "mrr_mcu": 126152,
+          "fit_mid": 0.96
+        }
+      }
+    },
+    {
+      "day": 1359,
+      "tool": "incidents.respond",
+      "args": {
+        "mitigation": "contain_and_fix"
+      }
+    },
+    {
+      "day": 1359,
+      "tool": "sales.campaign",
+      "args": {
+        "trials": 24
+      }
+    },
+    {
+      "day": 1419,
+      "tool": "sales.campaign",
+      "args": {
+        "trials": 24
+      }
+    },
+    {
+      "day": 1419,
+      "tool": "board.submit",
+      "args": {
+        "matter": "report",
+        "evidence": {
+          "mrr_mcu": 133949,
+          "fit_mid": 0.96,
+          "monthly_profit": true
+        }
+      }
+    },
+    {
+      "day": 1440,
+      "tool": "sales.campaign",
+      "args": {
+        "trials": 24
+      }
+    },
+    {
+      "day": 1440,
+      "tool": "board.submit",
+      "args": {
+        "matter": "report",
+        "evidence": {
+          "mrr_mcu": 137407,
+          "fit_mid": 0.96,
+          "monthly_profit": true
+        }
+      }
+    },
+    {
+      "day": 1456,
+      "tool": "incidents.respond",
+      "args": {
+        "mitigation": "contain_and_fix"
+      }
+    },
+    {
+      "day": 1456,
+      "tool": "sales.campaign",
+      "args": {
+        "trials": 24
+      }
+    },
+    {
+      "day": 1516,
+      "tool": "sales.campaign",
+      "args": {
+        "trials": 24
+      }
+    },
+    {
+      "day": 1516,
+      "tool": "board.submit",
+      "args": {
+        "matter": "report",
+        "evidence": {
+          "mrr_mcu": 145045,
+          "fit_mid": 0.96,
+          "monthly_profit": true
+        }
+      }
+    },
+    {
+      "day": 1530,
+      "tool": "sales.campaign",
+      "args": {
+        "trials": 24
+      }
+    },
+    {
+      "day": 1530,
+      "tool": "board.submit",
+      "args": {
+        "matter": "report",
+        "evidence": {
+          "mrr_mcu": 148141,
+          "fit_mid": 0.96
+        }
+      }
+    },
+    {
+      "day": 1553,
+      "tool": "incidents.respond",
+      "args": {
+        "mitigation": "contain_and_fix"
+      }
+    },
+    {
+      "day": 1553,
+      "tool": "sales.campaign",
+      "args": {
+        "trials": 24
+      }
+    },
+    {
+      "day": 1553,
+      "tool": "board.submit",
+      "args": {
+        "matter": "report",
+        "evidence": {
+          "mrr_mcu": 148141,
+          "fit_mid": 0.96,
+          "reporting_updated": true
+        }
+      }
+    },
+    {
+      "day": 1613,
+      "tool": "sales.campaign",
+      "args": {
+        "trials": 24
+      }
+    },
+    {
+      "day": 1613,
+      "tool": "board.submit",
+      "args": {
+        "matter": "report",
+        "evidence": {
+          "mrr_mcu": 155042,
+          "fit_mid": 0.96,
+          "monthly_profit": true
+        }
+      }
+    },
+    {
+      "day": 1620,
+      "tool": "sales.campaign",
+      "args": {
+        "trials": 24
+      }
+    },
+    {
+      "day": 1620,
+      "tool": "board.submit",
+      "args": {
+        "matter": "report",
+        "evidence": {
+          "mrr_mcu": 158047,
+          "fit_mid": 0.96
+        }
+      }
+    },
+    {
+      "day": 1650,
+      "tool": "incidents.respond",
+      "args": {
+        "mitigation": "contain_and_fix"
+      }
+    },
+    {
+      "day": 1650,
+      "tool": "sales.campaign",
+      "args": {
+        "trials": 24
+      }
+    },
+    {
+      "day": 1710,
+      "tool": "sales.campaign",
+      "args": {
+        "trials": 24
+      }
+    },
+    {
+      "day": 1710,
+      "tool": "board.submit",
+      "args": {
+        "matter": "report",
+        "evidence": {
+          "mrr_mcu": 166900,
+          "fit_mid": 0.96,
+          "monthly_profit": true
+        }
+      }
+    },
+    {
+      "day": 1747,
+      "tool": "incidents.respond",
+      "args": {
+        "mitigation": "contain_and_fix"
+      }
+    },
+    {
+      "day": 1747,
+      "tool": "sales.campaign",
+      "args": {
+        "trials": 24
+      }
+    },
+    {
+      "day": 1800,
+      "tool": "sales.campaign",
+      "args": {
+        "trials": 24
+      }
+    },
+    {
+      "day": 1800,
+      "tool": "board.submit",
+      "args": {
+        "matter": "report",
+        "evidence": {
+          "mrr_mcu": 174354,
+          "fit_mid": 0.96,
+          "monthly_profit": true,
+          "final_year": true
+        }
+      }
+    }
+  ],
+  "rescored_family_corrected": true
+}

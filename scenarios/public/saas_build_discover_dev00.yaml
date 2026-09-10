@@ -1,0 +1,14 @@
+benchmark: CompanyBench
+specification_version: 0.1.0
+manifest_status: illustrative_uncalibrated
+track: assigned_sector_core
+id: saas_build_discover_dev00
+sector: saas
+family: build_discover
+seed: 0
+difficulty: 1
+horizon_months: 60
+start_date: 2031-01-01
+currency: MCU
+opening: {cash: 1500, restricted: 0, receivables: 24, prepaid: 36, equip: 90, payables: 50, deferred: 100, debt: 0, equity: 1500, employees: 6}
+notes: Public tutorial world — stable demand, simple contracts, transparent reports.

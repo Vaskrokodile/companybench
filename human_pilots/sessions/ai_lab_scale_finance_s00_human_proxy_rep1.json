@@ -1,0 +1,17 @@
+{
+  "pilot_id": "human_proxy_ai_lab_scale_finance_0",
+  "sector": "ai_lab",
+  "family": "scale_finance",
+  "seed": 0,
+  "seed_tag": "pilot_rep1",
+  "days": 1826,
+  "endpoint": "horizon_reached",
+  "head_hash": "sha256:8ee443aa9c7aa6584d279943defb46a0613596d6cf34768f04bd4277b1c2ca0f",
+  "wall_s": 0.357,
+  "assistance_events": 0,
+  "workspace_bytes": 0,
+  "cash_unrestricted": 122812526,
+  "revenue": 0,
+  "blinding": "proxy_human \u2014 replace with live sessions for ranked comparison",
+  "gateway_calls": 2
+}

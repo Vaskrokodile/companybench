@@ -1,0 +1,14 @@
+benchmark: CompanyBench
+specification_version: 0.1.0
+manifest_status: illustrative_uncalibrated
+track: assigned_sector_core
+id: ai_lab_build_discover_dev00
+sector: ai_lab
+family: build_discover
+seed: 0
+difficulty: 2
+horizon_months: 60
+start_date: 2031-01-01
+currency: MCU
+opening: {cash: 8000, restricted: 0, receivables: 100, prepaid: 500, equip: 400, payables: 200, deferred: 100, debt: 0, equity: 8700, employees: 12}
+notes: Public tutorial lab — three feasible programs, rights review available.

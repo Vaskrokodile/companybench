@@ -1,0 +1,201 @@
+{
+  "baselines": [
+    "idle_cash",
+    "random_valid",
+    "accounting_safe",
+    "conservative_growth"
+  ],
+  "calib_seeds": [
+    1000,
+    1001,
+    1002,
+    1003
+  ],
+  "global": {
+    "cash": {
+      "L": 10521.02,
+      "U": 2896458.01
+    },
+    "revenue": {
+      "L": 0.0,
+      "U": 3055391.14
+    }
+  },
+  "method": "per-stratum L=p10 U=p90 of 4 baselines \u00d74 calib seeds (1000-1003) on 60m Core; never uses model best/worst; 12m proxy bug fixed",
+  "normalize": "normalized(x)=100*clip((x-L)/(U-L),0,1); publish raw+unclipped",
+  "note": "FROZEN \u2014 new entrant cannot move L/U (spec \u00a728.7). Revision requires new version.",
+  "params_sha256": "9558ac4baaee1b3b4a3fb95790e5546f944996963b1b586a6172b896f9451e92",
+  "params_version": "params_v1.0",
+  "sha256": "8f1d26fe2c6ec9017266aaa37541b25377519e85ccdf3695b2e0a2346b072068",
+  "strata": {
+    "ai_lab_build_discover": {
+      "cash": {
+        "L": 31250.29,
+        "U": 1422917.1,
+        "n": 16,
+        "p": "p10/p90 60m"
+      },
+      "revenue": {
+        "L": 0.0,
+        "U": 0.0,
+        "n": 16,
+        "p": "p10/p90 60m"
+      }
+    },
+    "ai_lab_compete_adapt": {
+      "cash": {
+        "L": 22917.04,
+        "U": 3212500.3,
+        "n": 16,
+        "p": "p10/p90 60m"
+      },
+      "revenue": {
+        "L": 0.0,
+        "U": 0.0,
+        "n": 16,
+        "p": "p10/p90 60m"
+      }
+    },
+    "ai_lab_compound_stress": {
+      "cash": {
+        "L": 35417.01,
+        "U": 1682812.77,
+        "n": 16,
+        "p": "p10/p90 60m"
+      },
+      "revenue": {
+        "L": 0.0,
+        "U": 0.0,
+        "n": 16,
+        "p": "p10/p90 60m"
+      }
+    },
+    "ai_lab_scale_finance": {
+      "cash": {
+        "L": 36979.57,
+        "U": 1945833.79,
+        "n": 16,
+        "p": "p10/p90 60m"
+      },
+      "revenue": {
+        "L": 0.0,
+        "U": 0.0,
+        "n": 16,
+        "p": "p10/p90 60m"
+      }
+    },
+    "electricity_build_discover": {
+      "cash": {
+        "L": 866468.42,
+        "U": 3413616.12,
+        "n": 16,
+        "p": "p10/p90 60m"
+      },
+      "revenue": {
+        "L": 2857136.7,
+        "U": 3132599.55,
+        "n": 16,
+        "p": "p10/p90 60m"
+      }
+    },
+    "electricity_compete_adapt": {
+      "cash": {
+        "L": 527295.46,
+        "U": 3376892.48,
+        "n": 16,
+        "p": "p10/p90 60m"
+      },
+      "revenue": {
+        "L": 2856861.16,
+        "U": 3109799.23,
+        "n": 16,
+        "p": "p10/p90 60m"
+      }
+    },
+    "electricity_compound_stress": {
+      "cash": {
+        "L": 624729.79,
+        "U": 3167165.7,
+        "n": 16,
+        "p": "p10/p90 60m"
+      },
+      "revenue": {
+        "L": 2841485.1,
+        "U": 3168110.92,
+        "n": 16,
+        "p": "p10/p90 60m"
+      }
+    },
+    "electricity_scale_finance": {
+      "cash": {
+        "L": 1002704.16,
+        "U": 3230928.3,
+        "n": 16,
+        "p": "p10/p90 60m"
+      },
+      "revenue": {
+        "L": 2849263.81,
+        "U": 3140774.91,
+        "n": 16,
+        "p": "p10/p90 60m"
+      }
+    },
+    "saas_build_discover": {
+      "cash": {
+        "L": 6250.17,
+        "U": 34375.11,
+        "n": 16,
+        "p": "p10/p90 60m"
+      },
+      "revenue": {
+        "L": 570055.12,
+        "U": 1026083.18,
+        "n": 16,
+        "p": "p10/p90 60m"
+      }
+    },
+    "saas_compete_adapt": {
+      "cash": {
+        "L": 8333.5,
+        "U": 41666.8,
+        "n": 16,
+        "p": "p10/p90 60m"
+      },
+      "revenue": {
+        "L": 565361.43,
+        "U": 1033889.48,
+        "n": 16,
+        "p": "p10/p90 60m"
+      }
+    },
+    "saas_compound_stress": {
+      "cash": {
+        "L": 4166.87,
+        "U": 41666.8,
+        "n": 16,
+        "p": "p10/p90 60m"
+      },
+      "revenue": {
+        "L": 562914.75,
+        "U": 1014552.1,
+        "n": 16,
+        "p": "p10/p90 60m"
+      }
+    },
+    "saas_scale_finance": {
+      "cash": {
+        "L": 3125.18,
+        "U": 21354.36,
+        "n": 16,
+        "p": "p10/p90 60m"
+      },
+      "revenue": {
+        "L": 563332.01,
+        "U": 1024717.61,
+        "n": 16,
+        "p": "p10/p90 60m"
+      }
+    }
+  },
+  "version": "anchors_v1.0"
+}

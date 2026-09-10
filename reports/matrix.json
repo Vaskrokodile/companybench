@@ -1,0 +1,519 @@
+{
+  "rows": [
+    {
+      "scenario": "ai_lab_build_discover_s00",
+      "sector": "ai_lab",
+      "family": "build_discover",
+      "seed": 0,
+      "agent": "sector_expert",
+      "days": 182,
+      "endpoint": "horizon_reached",
+      "V": 100.0,
+      "terminal": {
+        "going_concern": 6683541.71,
+        "liquidation": 5967187.54,
+        "band": [
+          5967187.54,
+          8354427.14
+        ]
+      },
+      "cash": 696354171,
+      "revenue": 0,
+      "head": "sha256:9e47a0ee47db438237ece9de27a8471de6c416d772a0ceeb99933071d8fcd8fa"
+    },
+    {
+      "scenario": "ai_lab_build_discover_s01",
+      "sector": "ai_lab",
+      "family": "build_discover",
+      "seed": 1,
+      "agent": "sector_expert",
+      "days": 182,
+      "endpoint": "horizon_reached",
+      "V": 100.0,
+      "terminal": {
+        "going_concern": 6595000.06,
+        "liquidation": 5887500.05,
+        "band": [
+          5887500.05,
+          8243750.07
+        ]
+      },
+      "cash": 687500006,
+      "revenue": 0,
+      "head": "sha256:8748abb74bf02596855c0f5c36f8cf81acb3d5f4a6838691fd0b568eb74fd7ae"
+    },
+    {
+      "scenario": "ai_lab_scale_finance_s00",
+      "sector": "ai_lab",
+      "family": "scale_finance",
+      "seed": 0,
+      "agent": "sector_expert",
+      "days": 182,
+      "endpoint": "horizon_reached",
+      "V": 100.0,
+      "terminal": {
+        "going_concern": 6595000.06,
+        "liquidation": 5887500.05,
+        "band": [
+          5887500.05,
+          8243750.07
+        ]
+      },
+      "cash": 687500006,
+      "revenue": 0,
+      "head": "sha256:d7e424278a1b320e19028bbe092799177a285dc2e396187af94bf54d72606d9e"
+    },
+    {
+      "scenario": "ai_lab_scale_finance_s01",
+      "sector": "ai_lab",
+      "family": "scale_finance",
+      "seed": 1,
+      "agent": "sector_expert",
+      "days": 182,
+      "endpoint": "horizon_reached",
+      "V": 100.0,
+      "terminal": {
+        "going_concern": 6648125.05,
+        "liquidation": 5935312.54,
+        "band": [
+          5935312.54,
+          8310156.31
+        ]
+      },
+      "cash": 692812505,
+      "revenue": 0,
+      "head": "sha256:ed028e381ce0cd17d459146c0afe37c27706f077800938c4ac747a3375161cad"
+    },
+    {
+      "scenario": "ai_lab_compete_adapt_s00",
+      "sector": "ai_lab",
+      "family": "compete_adapt",
+      "seed": 0,
+      "agent": "sector_expert",
+      "days": 182,
+      "endpoint": "horizon_reached",
+      "V": 100.0,
+      "terminal": {
+        "going_concern": 6595000.06,
+        "liquidation": 5887500.05,
+        "band": [
+          5887500.05,
+          8243750.07
+        ]
+      },
+      "cash": 687500006,
+      "revenue": 0,
+      "head": "sha256:09102408f7abdcdc5545a28337631f38d65a6f59272452265cc2cdf940af3011"
+    },
+    {
+      "scenario": "ai_lab_compete_adapt_s01",
+      "sector": "ai_lab",
+      "family": "compete_adapt",
+      "seed": 1,
+      "agent": "sector_expert",
+      "days": 182,
+      "endpoint": "horizon_reached",
+      "V": 100.0,
+      "terminal": {
+        "going_concern": 6595000.06,
+        "liquidation": 5887500.05,
+        "band": [
+          5887500.05,
+          8243750.07
+        ]
+      },
+      "cash": 687500006,
+      "revenue": 0,
+      "head": "sha256:e570a2661e316a9ddc05389783ff5bc496238c504aa60c52af1d3bf8c08e6fe5"
+    },
+    {
+      "scenario": "ai_lab_compound_stress_s00",
+      "sector": "ai_lab",
+      "family": "compound_stress",
+      "seed": 0,
+      "agent": "sector_expert",
+      "days": 182,
+      "endpoint": "horizon_reached",
+      "V": 100.0,
+      "terminal": {
+        "going_concern": 6630416.72,
+        "liquidation": 5919375.05,
+        "band": [
+          5919375.05,
+          8288020.9
+        ]
+      },
+      "cash": 691041672,
+      "revenue": 0,
+      "head": "sha256:36c0f89120d3aabbb450818dff3f4db22fadf6daca4c54edc9a800805767cd2f"
+    },
+    {
+      "scenario": "ai_lab_compound_stress_s01",
+      "sector": "ai_lab",
+      "family": "compound_stress",
+      "seed": 1,
+      "agent": "sector_expert",
+      "days": 182,
+      "endpoint": "horizon_reached",
+      "V": 100.0,
+      "terminal": {
+        "going_concern": 6595000.06,
+        "liquidation": 5887500.05,
+        "band": [
+          5887500.05,
+          8243750.07
+        ]
+      },
+      "cash": 687500006,
+      "revenue": 0,
+      "head": "sha256:45849b4cbafcd0730e3981839750e5052dfcb1a19c040562abd6b5a6cfb60095"
+    },
+    {
+      "scenario": "saas_build_discover_s00",
+      "sector": "saas",
+      "family": "build_discover",
+      "seed": 0,
+      "agent": "sector_expert",
+      "days": 182,
+      "endpoint": "horizon_reached",
+      "V": 100.0,
+      "terminal": {
+        "going_concern": 1094500.04,
+        "liquidation": 932175.04,
+        "band": [
+          932175.04,
+          1368125.05
+        ]
+      },
+      "cash": 106250004,
+      "revenue": 7280000,
+      "head": "sha256:44f926c2bca5962eee67c688bdc14bbdc94cb8fee8cc034dad3f2760b9382e27"
+    },
+    {
+      "scenario": "saas_build_discover_s01",
+      "sector": "saas",
+      "family": "build_discover",
+      "seed": 1,
+      "agent": "sector_expert",
+      "days": 182,
+      "endpoint": "horizon_reached",
+      "V": 100.0,
+      "terminal": {
+        "going_concern": 1094500.04,
+        "liquidation": 932175.04,
+        "band": [
+          932175.04,
+          1368125.05
+        ]
+      },
+      "cash": 106250004,
+      "revenue": 7280000,
+      "head": "sha256:a20fb21772850c16d98ce2e424351200a7e75fa29b36431dfd8edc952d81fc28"
+    },
+    {
+      "scenario": "saas_scale_finance_s00",
+      "sector": "saas",
+      "family": "scale_finance",
+      "seed": 0,
+      "agent": "sector_expert",
+      "days": 182,
+      "endpoint": "horizon_reached",
+      "V": 100.0,
+      "terminal": {
+        "going_concern": 1094500.04,
+        "liquidation": 932175.04,
+        "band": [
+          932175.04,
+          1368125.05
+        ]
+      },
+      "cash": 106250004,
+      "revenue": 7280000,
+      "head": "sha256:d2d2911c477f883a55096ae7975220014c76c7339edbc1938a72a7d8db7784c7"
+    },
+    {
+      "scenario": "saas_scale_finance_s01",
+      "sector": "saas",
+      "family": "scale_finance",
+      "seed": 1,
+      "agent": "sector_expert",
+      "days": 182,
+      "endpoint": "horizon_reached",
+      "V": 100.0,
+      "terminal": {
+        "going_concern": 1094500.04,
+        "liquidation": 932175.04,
+        "band": [
+          932175.04,
+          1368125.05
+        ]
+      },
+      "cash": 106250004,
+      "revenue": 7280000,
+      "head": "sha256:98dbf5009fbf4aa0d2a7620e171ab7dc82bb8b541da144b4f848b21316730d30"
+    },
+    {
+      "scenario": "saas_compete_adapt_s00",
+      "sector": "saas",
+      "family": "compete_adapt",
+      "seed": 0,
+      "agent": "sector_expert",
+      "days": 182,
+      "endpoint": "horizon_reached",
+      "V": 100.0,
+      "terminal": {
+        "going_concern": 1094500.04,
+        "liquidation": 932175.04,
+        "band": [
+          932175.04,
+          1368125.05
+        ]
+      },
+      "cash": 106250004,
+      "revenue": 7280000,
+      "head": "sha256:ca221697dc1d1b4b630833471f0e6242ef2683abfa884e0f6b542bac51cb48d4"
+    },
+    {
+      "scenario": "saas_compete_adapt_s01",
+      "sector": "saas",
+      "family": "compete_adapt",
+      "seed": 1,
+      "agent": "sector_expert",
+      "days": 182,
+      "endpoint": "horizon_reached",
+      "V": 100.0,
+      "terminal": {
+        "going_concern": 1172625.04,
+        "liquidation": 1006393.79,
+        "band": [
+          1006393.79,
+          1465781.3
+        ]
+      },
+      "cash": 114062504,
+      "revenue": 7280000,
+      "head": "sha256:7c2619c58a81ed666b817e38c28b5387cb1dca3d146659afcc8740ab45ff3892"
+    },
+    {
+      "scenario": "saas_compound_stress_s00",
+      "sector": "saas",
+      "family": "compound_stress",
+      "seed": 0,
+      "agent": "sector_expert",
+      "days": 182,
+      "endpoint": "horizon_reached",
+      "V": 100.0,
+      "terminal": {
+        "going_concern": 1094500.04,
+        "liquidation": 932175.04,
+        "band": [
+          932175.04,
+          1368125.05
+        ]
+      },
+      "cash": 106250004,
+      "revenue": 7280000,
+      "head": "sha256:fe9e06d2cc1565c07f92e46f984bb3e7ca94e36b1f3f9624a7bb35c23742dde5"
+    },
+    {
+      "scenario": "saas_compound_stress_s01",
+      "sector": "saas",
+      "family": "compound_stress",
+      "seed": 1,
+      "agent": "sector_expert",
+      "days": 182,
+      "endpoint": "horizon_reached",
+      "V": 100.0,
+      "terminal": {
+        "going_concern": 1094500.04,
+        "liquidation": 932175.04,
+        "band": [
+          932175.04,
+          1368125.05
+        ]
+      },
+      "cash": 106250004,
+      "revenue": 7280000,
+      "head": "sha256:4d7f7e9a4ec8cf3d8ca83e377dc73dcad314c937fcea3eed141945d0c985a52c"
+    },
+    {
+      "scenario": "electricity_build_discover_s00",
+      "sector": "electricity",
+      "family": "build_discover",
+      "seed": 0,
+      "agent": "sector_expert",
+      "days": 182,
+      "endpoint": "horizon_reached",
+      "V": 100.0,
+      "terminal": {
+        "going_concern": 7099805.08,
+        "liquidation": 6327364.34,
+        "band": [
+          6327364.34,
+          8874756.35
+        ]
+      },
+      "cash": 1059630439,
+      "revenue": 25610472,
+      "head": "sha256:6012319b51bcb4451c988197191c45a924c709403eaf0ed23746739c6a7deef7"
+    },
+    {
+      "scenario": "electricity_build_discover_s01",
+      "sector": "electricity",
+      "family": "build_discover",
+      "seed": 1,
+      "agent": "sector_expert",
+      "days": 182,
+      "endpoint": "horizon_reached",
+      "V": 100.0,
+      "terminal": {
+        "going_concern": 7144157.53,
+        "liquidation": 6332909.6,
+        "band": [
+          6332909.6,
+          8930196.92
+        ]
+      },
+      "cash": 1058838602,
+      "revenue": 29748576,
+      "head": "sha256:3fa0553544d670de173cbb279aebec0afb843428bb7364f4c3f957c482510c94"
+    },
+    {
+      "scenario": "electricity_scale_finance_s00",
+      "sector": "electricity",
+      "family": "scale_finance",
+      "seed": 0,
+      "agent": "sector_expert",
+      "days": 182,
+      "endpoint": "horizon_reached",
+      "V": 100.0,
+      "terminal": {
+        "going_concern": 7149765.96,
+        "liquidation": 6332918.05,
+        "band": [
+          6332918.05,
+          8937207.45
+        ]
+      },
+      "cash": 1058639508,
+      "revenue": 30350194,
+      "head": "sha256:1a4888b308c56694f62722d7fa6dcc736a8e6eba712b3e43f68d9af13a5a9556"
+    },
+    {
+      "scenario": "electricity_scale_finance_s01",
+      "sector": "electricity",
+      "family": "scale_finance",
+      "seed": 1,
+      "agent": "sector_expert",
+      "days": 182,
+      "endpoint": "horizon_reached",
+      "V": 100.0,
+      "terminal": {
+        "going_concern": 7135751.47,
+        "liquidation": 6330632.94,
+        "band": [
+          6330632.94,
+          8919689.34
+        ]
+      },
+      "cash": 1058813582,
+      "revenue": 29102911,
+      "head": "sha256:82761799ca2b9ca43443be63ce9f8362d110b02c418d67e99a069addf4453087"
+    },
+    {
+      "scenario": "electricity_compete_adapt_s00",
+      "sector": "electricity",
+      "family": "compete_adapt",
+      "seed": 0,
+      "agent": "sector_expert",
+      "days": 182,
+      "endpoint": "horizon_reached",
+      "V": 100.0,
+      "terminal": {
+        "going_concern": 7147631.47,
+        "liquidation": 6359169.11,
+        "band": [
+          6359169.11,
+          8934539.34
+        ]
+      },
+      "cash": 1062465892,
+      "revenue": 27152000,
+      "head": "sha256:acf74d9311ed0866db2b2a6642c5ebe6a37b64f65e02e0b5e5d3ce637cdea8f8"
+    },
+    {
+      "scenario": "electricity_compete_adapt_s01",
+      "sector": "electricity",
+      "family": "compete_adapt",
+      "seed": 1,
+      "agent": "sector_expert",
+      "days": 182,
+      "endpoint": "horizon_reached",
+      "V": 100.0,
+      "terminal": {
+        "going_concern": 7143569.71,
+        "liquidation": 6331820.32,
+        "band": [
+          6331820.32,
+          8929462.14
+        ]
+      },
+      "cash": 1058703985,
+      "revenue": 29808623,
+      "head": "sha256:0572f6c32fb5ea5c94e6369d76f24472e666a6098b34334610e387be789145c5"
+    },
+    {
+      "scenario": "electricity_compound_stress_s00",
+      "sector": "electricity",
+      "family": "compound_stress",
+      "seed": 0,
+      "agent": "sector_expert",
+      "days": 182,
+      "endpoint": "horizon_reached",
+      "V": 100.0,
+      "terminal": {
+        "going_concern": 7230210.97,
+        "liquidation": 6424103.49,
+        "band": [
+          6424103.49,
+          9037763.71
+        ]
+      },
+      "cash": 1068792964,
+      "revenue": 28680602,
+      "head": "sha256:647ce7496f3bb9bb11185ec621fa45bb4c5f69dbec5cde4119acd783e32163ac"
+    },
+    {
+      "scenario": "electricity_compound_stress_s01",
+      "sector": "electricity",
+      "family": "compound_stress",
+      "seed": 1,
+      "agent": "sector_expert",
+      "days": 182,
+      "endpoint": "horizon_reached",
+      "V": 100.0,
+      "terminal": {
+        "going_concern": 7116181.45,
+        "liquidation": 6329012.69,
+        "band": [
+          6329012.69,
+          8895226.82
+        ]
+      },
+      "cash": 1059281046,
+      "revenue": 27183541,
+      "head": "sha256:79cf166eda7aebab13d11f9bc220a2d1e20e58fe4169c85b1261107a179175b5"
+    }
+  ],
+  "agg": {
+    "sector_means": {
+      "ai_lab": 100.0,
+      "saas": 100.0,
+      "electricity": 100.0
+    },
+    "overall": 100.0,
+    "n": 24
+  },
+  "wall_s": 0.73,
+  "n": 24
+}

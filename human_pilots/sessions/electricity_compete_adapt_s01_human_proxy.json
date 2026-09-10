@@ -1,0 +1,17 @@
+{
+  "pilot_id": "human_proxy_electricity_compete_adapt_1",
+  "sector": "electricity",
+  "family": "compete_adapt",
+  "seed": 1,
+  "seed_tag": "pilot_rep0",
+  "days": 1826,
+  "endpoint": "horizon_reached",
+  "head_hash": "sha256:589d1967c42abe896327ab28c228fc57af92ef665f39c8b027459e15c1931102",
+  "wall_s": 0.802,
+  "assistance_events": 0,
+  "workspace_bytes": 0,
+  "cash_unrestricted": 96118033,
+  "revenue": 304619151,
+  "blinding": "proxy_human \u2014 replace with live sessions for ranked comparison",
+  "gateway_calls": 2
+}

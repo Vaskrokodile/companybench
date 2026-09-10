@@ -1,0 +1,17 @@
+{
+  "pilot_id": "human_proxy_saas_compete_adapt_0",
+  "sector": "saas",
+  "family": "compete_adapt",
+  "seed": 0,
+  "seed_tag": "pilot_rep0",
+  "days": 1826,
+  "endpoint": "horizon_reached",
+  "head_hash": "sha256:4ba0d803976b9d910e7d9633064ea307d023a449529fe34abf99fbc0adde4b4a",
+  "wall_s": 1.246,
+  "assistance_events": 0,
+  "workspace_bytes": 0,
+  "cash_unrestricted": 2083359,
+  "revenue": 73040000,
+  "blinding": "proxy_human \u2014 replace with live sessions for ranked comparison",
+  "gateway_calls": 2
+}

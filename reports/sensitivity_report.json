@@ -1,0 +1,14 @@
+{
+  "method": "weight jitter ±0.05 (renorm) 500 trials; param pool 12 worlds conservative vs idle (12m proxy)",
+  "weight_rank_preservation": 0.834,
+  "target_preservation": 0.94,
+  "result": "BELOW TARGET — weights sensitive at ±0.05; top-band flips in 16.6% of jitters. Requires freeze with warning + wider pilot before ranked release claims.",
+  "param_jitter": {
+    "conservative_beats_idle_rate": 0.333,
+    "n": 12,
+    "note": "Cash-anchor alone does not separate conservative vs idle (cash tied at ~625k SaaS, both V=100). Full P/O components (milestones, obligations) required for true ranking; cash-only proxy underestimates managerial value."
+  },
+  "interpretation": "Measured sensitivity Exceeds fragility threshold. Do not claim stable ranking on cash alone. Full CoreScore with P/E/O (see audit) shows dispersion; weight sensitivity disclosed per §36.5 rather than hidden.",
+  "uncertainty_vs_sampling": "More seeds (10→20) halve sampling CI but do not fix model misspecification; tail power events remain labeled hard-to-calibrate.",
+  "action": "Freeze anchors v1.0 as-is with sensitivity warning; require ≥24 pilot worlds and full P/E/O scoring for ranked leaderboard (spec §30.2 power analysis)."
+}

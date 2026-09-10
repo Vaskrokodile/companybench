@@ -1,0 +1,17 @@
+{
+  "pilot_id": "human_proxy_electricity_compound_stress_0",
+  "sector": "electricity",
+  "family": "compound_stress",
+  "seed": 0,
+  "seed_tag": "pilot_rep0",
+  "days": 1826,
+  "endpoint": "horizon_reached",
+  "head_hash": "sha256:20b0b9c45808b27dfceb01363a09118308d83b46161733e6c4f29e16e0db61b3",
+  "wall_s": 0.787,
+  "assistance_events": 0,
+  "workspace_bytes": 0,
+  "cash_unrestricted": 173095987,
+  "revenue": 311497403,
+  "blinding": "proxy_human \u2014 replace with live sessions for ranked comparison",
+  "gateway_calls": 2
+}

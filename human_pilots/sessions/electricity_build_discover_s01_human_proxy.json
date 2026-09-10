@@ -1,0 +1,17 @@
+{
+  "pilot_id": "human_proxy_electricity_build_discover_1",
+  "sector": "electricity",
+  "family": "build_discover",
+  "seed": 1,
+  "seed_tag": "pilot_rep0",
+  "days": 1826,
+  "endpoint": "horizon_reached",
+  "head_hash": "sha256:9aea6793ff63b23484daf7502000ba70576a4289776d7d566551d0d3b960953e",
+  "wall_s": 0.838,
+  "assistance_events": 0,
+  "workspace_bytes": 0,
+  "cash_unrestricted": 383817103,
+  "revenue": 294160839,
+  "blinding": "proxy_human \u2014 replace with live sessions for ranked comparison",
+  "gateway_calls": 2
+}

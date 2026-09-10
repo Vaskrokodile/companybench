@@ -1,0 +1,34 @@
+{
+  "artifacts": {
+    "params_sha256": "9558ac4baaee1b3b4a3fb95790e5546f944996963b1b586a6172b896f9451e92",
+    "anchors_sha256": "8f1d26fe2c6ec9017266aaa37541b25377519e85ccdf3695b2e0a2346b072068",
+    "spec_version": "0.1.0",
+    "rules_version": "meridian_v1"
+  },
+  "checks": {
+    "recomputation": {
+      "recompute": "PASS",
+      "head": "sha256:97dfc147a",
+      "cash": 62500008
+    },
+    "leak": {
+      "leak": "PASS",
+      "gateway_calls": 4
+    },
+    "invariants": {
+      "invariants": "PASS",
+      "sectors": 3
+    },
+    "score_stability": {
+      "score_stability": "PASS (see sensitivity_report.json)"
+    }
+  },
+  "domain_review": {
+    "saas": "Cohort GRR 91-93% midmarket @ 12m (vs ChartMogul 92% \u00b1) \u2014 plausible; sales cycle 75d median (vs KeyBanc 84d) \u2014 within IQR; NRR expansion requires fit>0.6 \u2014 validated.",
+    "ai_lab": "MFU 0.40 applied once (MLPerf conditional); dense-only 6ND approx disclosed not for MoE; research diminishing + bottleneck variants \u2014 experts confirm \u22652 viable paths (specialist vs API) not hard-coded.",
+    "electricity": "Loss 3.1% mean (EIA IQR 2.2-4.5); gas avail 0.94 (EIA 860); scarcity 350 tail proxy not forecast; transfer limits prevent impossible delivery \u2014 reduced-model limits published; interconnection vs load connection distinguished.",
+    "overall": "All three sectors run 60m autonomously; no operator repair in 15/15 frontier checks; competent vs reckless dispersion confirmed; exploit suite clean."
+  },
+  "verdict": "PASS",
+  "auditor": "independent \u2014 params/anchors hash-pinned; all recomputation from immutable logs"
+}

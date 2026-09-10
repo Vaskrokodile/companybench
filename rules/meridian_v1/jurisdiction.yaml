@@ -1,0 +1,13 @@
+jurisdiction: meridian_v1
+currency: MCU
+minor_per_mcu: 100
+corporate_tax: 0.25
+payroll: monthly_last_business_day_accrued_daily
+employee_notice_days: 30
+supplier_terms: net_30_from_accepted_delivery
+loss_carryforward: unlimited_same_entity_no_refund
+unsecured_cure_business_days: 5
+wholesale_collateral: intraday_or_next_day_per_instrument
+board_reserved_commitment_pct_opening_equity: 0.20
+safety_license_path: notice_and_restriction_per_permission_pack
+holidays: [2031-01-01, 2031-05-01, 2031-12-25, 2031-12-26]

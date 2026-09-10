@@ -1,0 +1,14 @@
+benchmark: CompanyBench
+specification_version: 0.1.0
+manifest_status: illustrative_uncalibrated
+track: assigned_sector_core
+id: electricity_scale_finance_dev00
+sector: electricity
+family: scale_finance
+seed: 0
+difficulty: 3
+horizon_months: 60
+start_date: 2031-01-01
+currency: MCU
+opening: {cash: 12000, restricted: 3000, receivables: 2000, equip: 500, dev_rights: 1500, payables: 2000, debt: 2000, equity: 15000, employees: 14}
+notes: Public large-load tutorial — Asterion dossier with staged vs firm choice.

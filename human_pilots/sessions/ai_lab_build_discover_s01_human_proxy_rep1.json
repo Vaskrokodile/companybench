@@ -1,0 +1,17 @@
+{
+  "pilot_id": "human_proxy_ai_lab_build_discover_1",
+  "sector": "ai_lab",
+  "family": "build_discover",
+  "seed": 1,
+  "seed_tag": "pilot_rep1",
+  "days": 1826,
+  "endpoint": "horizon_reached",
+  "head_hash": "sha256:761c6a9d7ef0546c840d5cbe11ba8669c06ac45672c44ec9a2b2c4eb04d10ded",
+  "wall_s": 0.345,
+  "assistance_events": 0,
+  "workspace_bytes": 0,
+  "cash_unrestricted": 155625000,
+  "revenue": 0,
+  "blinding": "proxy_human \u2014 replace with live sessions for ranked comparison",
+  "gateway_calls": 2
+}
